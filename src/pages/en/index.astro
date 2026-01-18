@@ -1,7 +1,18 @@
 ---
-import IndexPage from '$pages/index.astro';
+import HeroSection from "$pageComponents/Hero.astro";
+import AboutMeSection from "$pageComponents/AboutMe.astro";
+import Layout from "$layouts/Layout.astro";
+import MyExperienceSection from "$/components/pageComponents/MyExperience.astro";
+import SkillsSection from "$/components/pageComponents/Skills.astro";
+import ContactSection from "$pageComponents/Contact.astro"
 
 export const prerender = true;
 ---
 
-<IndexPage />
+<Layout>
+	<HeroSection />
+	<AboutMeSection />
+	<MyExperienceSection />
+	<SkillsSection />
+	<ContactSection />
+</Layout>

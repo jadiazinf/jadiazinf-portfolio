@@ -25,7 +25,11 @@ export default defineConfig({
   i18n: {
     defaultLocale: "en",
     locales: ["en", "es"],
-    routing: { prefixDefaultLocale: true },
+    routing: { prefixDefaultLocale: true, redirectToDefaultLocale: true },
+  },
+
+  redirects: {
+    "/": "/en/",
   },
 
   site: "https://astro-portfolio-eight-rho.vercel.app",
