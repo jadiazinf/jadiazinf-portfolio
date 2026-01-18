@@ -2,6 +2,22 @@ import { EAppLanguages } from "../types";
 
 export function getExperienceTranslations() {
   return {
+    kompii: {
+      [EAppLanguages.ENGLISH]: {
+        period: "November 2025 – Present",
+        title: "Full Stack Developer",
+        company: "Kompii, Caracas, Venezuela",
+        description:
+          "Online lending platform operating in the Dominican Republic and Venezuela. I lead technological modernization initiatives and application maintenance in a monorepo environment managed with Turborepo and pnpm. Responsible for the complete redesign of the administrative application, migrating from Material UI to ShadCN UI and from Page Router to Next.js App Router, implementing tRPC for type-safe communication. I develop and maintain the mobile application using Expo. Additionally, I refactor and optimize backend business logic, ensuring the scalability and maintainability of the complete system. I integrate AI tools like Claude AI Agent in VSCode to optimize the development workflow and increase team productivity.",
+      },
+      [EAppLanguages.SPANISH]: {
+        period: "noviembre 2025 – actualidad",
+        title: "Desarrollador Full Stack",
+        company: "Kompii, Caracas, Venezuela",
+        description:
+          "Plataforma de préstamos en línea operando en República Dominicana y Venezuela. Lidero iniciativas de modernización tecnológica y mantenimiento de aplicaciones en un entorno de monorepo gestionado con Turborepo y pnpm. Responsable del rediseño completo de la aplicación administrativa, migrando de Material UI a ShadCN UI y del Page Router al App Router de Next.js, implementando tRPC para comunicación type-safe. Desarrollo y mantengo la aplicación móvil utilizando Expo. Además, refactorizo y optimizo la lógica de negocio del backend, asegurando la escalabilidad y mantenibilidad del sistema completo. Integro herramientas de IA como Claude AI Agent en VSCode para optimizar el flujo de desarrollo y aumentar la productividad del equipo.",
+      },
+    },
     portfolio: {
       [EAppLanguages.ENGLISH]: {
         period: "September 2025",

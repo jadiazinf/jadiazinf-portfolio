@@ -1,4 +1,16 @@
 export const experienceTechnologies = {
+  kompii: [
+    "Next.js",
+    "TypeScript",
+    "Turborepo",
+    "pnpm",
+    "tRPC",
+    "ShadCN UI",
+    "Tailwindcss",
+    "Expo",
+    "React Native",
+    "Claude AI",
+  ],
   portfolio: ["Astro.js", "Svelte.js", "Tailwindcss", "Shadcn", "v0", "SEO"],
   gma: [
     "Next.js",
