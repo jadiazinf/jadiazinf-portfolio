@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Jesús Díaz | Software Engineer",
+    "description": "Portfolio of Jesús Díaz — Software Engineer from Caracas, Venezuela. Building modern, scalable web applications."
+  },
+  "nav": {
+    "hero": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Jesús Díaz",
+    "role": "Software Engineer",
+    "tagline": "Crafting digital experiences with clean code and modern technologies",
+    "cta": "View my work"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I'm a Software Engineer based in Caracas, Venezuela, passionate about building elegant solutions to complex problems.",
+    "paragraph2": "With a strong foundation in computer science and a keen eye for detail, I specialize in developing scalable web applications using modern technologies.",
+    "paragraph3": "I believe in writing code that reads like prose — clean, intentional, and maintainable. Every project is an opportunity to push the boundaries of what's possible."
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "Tools and technologies I work with daily"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of projects I've built",
+    "viewCode": "Source Code",
+    "viewDemo": "Live Demo"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "present": "Present"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "nameLabel": "Name",
+    "sendButton": "Send Message",
+    "orConnect": "Or connect with me on"
+  },
+  "footer": {
+    "builtWith": "Built with Next.js, TypeScript & HeroUI",
+    "rights": "All rights reserved"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
+  },
+  "projectData": {
+    "portfolio": {
+      "title": "Personal Portfolio",
+      "description": "A modern, responsive portfolio website built with Next.js, TypeScript, and HeroUI. Features i18n, dark mode, and smooth section transitions."
+    },
+    "ecommerce": {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with product management, shopping cart, payment processing, and order tracking."
+    },
+    "apiGateway": {
+      "title": "API Gateway",
+      "description": "High-performance API gateway built with Go, featuring rate limiting, authentication, load balancing, and service discovery."
+    }
+  },
+  "experienceData": {
+    "seniorDev": {
+      "company": "Tech Company",
+      "role": "Senior Software Engineer",
+      "description": "Leading development of scalable web applications, mentoring junior developers, and architecting microservices solutions."
+    },
+    "fullstackDev": {
+      "company": "Digital Agency",
+      "role": "Full Stack Developer",
+      "description": "Developed and maintained multiple client projects using modern web technologies, implementing CI/CD pipelines and automated testing."
+    },
+    "juniorDev": {
+      "company": "Startup Inc.",
+      "role": "Junior Developer",
+      "description": "Built responsive web interfaces and RESTful APIs, contributing to the core product used by thousands of users."
+    }
+  },
+  "skillCategories": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Databases",
+    "devops": "DevOps",
+    "tools": "Tools"
+  }
+}

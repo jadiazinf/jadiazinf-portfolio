@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Jesús Díaz | Ingeniero de Software",
+    "description": "Portafolio de Jesús Díaz — Ingeniero de Software de Caracas, Venezuela. Construyendo aplicaciones web modernas y escalables."
+  },
+  "nav": {
+    "hero": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Jesús Díaz",
+    "role": "Ingeniero de Software",
+    "tagline": "Creando experiencias digitales con código limpio y tecnologías modernas",
+    "cta": "Ver mi trabajo"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Soy un Ingeniero de Software de Caracas, Venezuela, apasionado por construir soluciones elegantes a problemas complejos.",
+    "paragraph2": "Con una sólida formación en informática y un ojo atento al detalle, me especializo en desarrollar aplicaciones web escalables utilizando tecnologías modernas.",
+    "paragraph3": "Creo en escribir código que se lea como prosa — limpio, intencional y mantenible. Cada proyecto es una oportunidad para superar los límites de lo posible."
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "subtitle": "Herramientas y tecnologías con las que trabajo a diario"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Una selección de proyectos que he construido",
+    "viewCode": "Código Fuente",
+    "viewDemo": "Demo en Vivo"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional",
+    "present": "Presente"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos.",
+    "emailLabel": "Correo Electrónico",
+    "messageLabel": "Mensaje",
+    "nameLabel": "Nombre",
+    "sendButton": "Enviar Mensaje",
+    "orConnect": "O conéctate conmigo en"
+  },
+  "footer": {
+    "builtWith": "Construido con Next.js, TypeScript y HeroUI",
+    "rights": "Todos los derechos reservados"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
+  },
+  "projectData": {
+    "portfolio": {
+      "title": "Portafolio Personal",
+      "description": "Un sitio web de portafolio moderno y responsivo construido con Next.js, TypeScript y HeroUI. Con i18n, modo oscuro y transiciones suaves entre secciones."
+    },
+    "ecommerce": {
+      "title": "Plataforma E-Commerce",
+      "description": "Solución e-commerce full-stack con gestión de productos, carrito de compras, procesamiento de pagos y seguimiento de pedidos."
+    },
+    "apiGateway": {
+      "title": "API Gateway",
+      "description": "API gateway de alto rendimiento construido con Go, con limitación de tasa, autenticación, balanceo de carga y descubrimiento de servicios."
+    }
+  },
+  "experienceData": {
+    "seniorDev": {
+      "company": "Empresa Tech",
+      "role": "Ingeniero de Software Senior",
+      "description": "Liderando el desarrollo de aplicaciones web escalables, mentoreando desarrolladores junior y diseñando soluciones de microservicios."
+    },
+    "fullstackDev": {
+      "company": "Agencia Digital",
+      "role": "Desarrollador Full Stack",
+      "description": "Desarrollo y mantenimiento de múltiples proyectos de clientes usando tecnologías web modernas, implementando pipelines CI/CD y pruebas automatizadas."
+    },
+    "juniorDev": {
+      "company": "Startup Inc.",
+      "role": "Desarrollador Junior",
+      "description": "Construcción de interfaces web responsivas y APIs RESTful, contribuyendo al producto principal usado por miles de usuarios."
+    }
+  },
+  "skillCategories": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Bases de Datos",
+    "devops": "DevOps",
+    "tools": "Herramientas"
+  }
+}
