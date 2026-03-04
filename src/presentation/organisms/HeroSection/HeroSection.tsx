@@ -70,11 +70,16 @@ export function HeroSection({
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-default-400">
+      <button
+        type="button"
+        aria-label="Scroll down"
+        onClick={() => onNavigate(ESectionId.About)}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-default-400 hover:text-primary transition-colors">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
-      </div>
+      </button>
     </section>
   );
 }
