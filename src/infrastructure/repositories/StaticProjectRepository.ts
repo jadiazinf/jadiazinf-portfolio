@@ -3,25 +3,29 @@ import type { IProjectRepository } from "@/domain/ports";
 
 const PROJECTS: IProject[] = [
   {
+    id: "kompii",
+    titleKey: "projectData.kompii.title",
+    descriptionKey: "projectData.kompii.description",
+    technologies: ["Next.js", "TypeScript", "tRPC", "ShadCN UI", "Expo", "Turborepo"],
+  },
+  {
+    id: "carshop",
+    titleKey: "projectData.carshop.title",
+    descriptionKey: "projectData.carshop.description",
+    technologies: ["Next.js", "Ruby on Rails", "PostgreSQL", "TypeScript"],
+  },
+  {
+    id: "eddu",
+    titleKey: "projectData.eddu.title",
+    descriptionKey: "projectData.eddu.description",
+    technologies: ["Next.js", "TypeScript", "Node.js", "Google Cloud Functions", "PostgreSQL"],
+  },
+  {
     id: "portfolio",
     titleKey: "projectData.portfolio.title",
     descriptionKey: "projectData.portfolio.description",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "HeroUI"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "HeroUI", "Resend"],
     sourceUrl: "https://github.com/jadiazinf/portfolio",
-  },
-  {
-    id: "ecommerce",
-    titleKey: "projectData.ecommerce.title",
-    descriptionKey: "projectData.ecommerce.description",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
-    sourceUrl: "https://github.com/jadiazinf",
-  },
-  {
-    id: "api-gateway",
-    titleKey: "projectData.apiGateway.title",
-    descriptionKey: "projectData.apiGateway.description",
-    technologies: ["Go", "gRPC", "Redis", "Kubernetes"],
-    sourceUrl: "https://github.com/jadiazinf",
   },
 ];
 

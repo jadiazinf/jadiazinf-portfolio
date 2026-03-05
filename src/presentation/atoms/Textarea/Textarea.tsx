@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 
 type TTextareaProps = Pick<
   HeroTextareaProps,
-  "label" | "placeholder" | "isRequired" | "variant" | "size" | "value" | "name" | "minRows"
+  "label" | "placeholder" | "isRequired" | "variant" | "size" | "value" | "name" | "minRows" | "isInvalid" | "errorMessage"
 > & {
   readonly className?: string;
   readonly onChange?: (value: string) => void;

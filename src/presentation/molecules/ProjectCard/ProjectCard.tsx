@@ -1,4 +1,5 @@
 import { Text } from "@/presentation/atoms/Text";
+import { Badge } from "@/presentation/atoms/Badge";
 import { cn } from "@/lib/cn";
 
 type TProjectCardProps = {
@@ -52,12 +53,9 @@ export function ProjectCard({
 
         <div className="flex flex-wrap gap-2 mt-1">
           {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="text-xs text-default-500 font-mono"
-            >
+            <Badge key={tech} variant="flat" size="sm">
               {tech}
-            </span>
+            </Badge>
           ))}
         </div>
 

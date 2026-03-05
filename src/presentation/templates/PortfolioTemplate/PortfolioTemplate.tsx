@@ -3,6 +3,7 @@
 import { SectionNavigator } from "@/presentation/layouts/SectionNavigator";
 import type { ESectionId } from "@/lib/constants";
 import type { TProjectDTO, TSkillDTO, TExperienceDTO, TSocialLinkDTO } from "@/application/dto";
+import type { TContactFormErrors } from "@/lib/schemas/contactForm";
 
 type TPortfolioTranslations = {
   readonly hero: { greeting: string; name: string; role: string; tagline: string; cta: string };
@@ -10,7 +11,7 @@ type TPortfolioTranslations = {
   readonly skills: { title: string; subtitle: string; categoryLabels: Record<string, string> };
   readonly projects: { title: string; subtitle: string; sourceLabel: string; demoLabel: string; translations: Record<string, { title: string; description: string }> };
   readonly experience: { title: string; subtitle: string; presentLabel: string; translations: Record<string, { company: string; role: string; description: string }> };
-  readonly contact: { title: string; subtitle: string; orConnect: string };
+  readonly contact: { title: string; subtitle: string; orConnect: string; nameLabel: string; emailLabel: string; messageLabel: string; sendButton: string; modalTitle: string; successMessage: string; errorMessage: string; downloadCv: string; validation: TContactFormErrors };
   readonly footer: { builtWith: string; rights: string };
   readonly sectionLabels: Record<ESectionId, string>;
 };
@@ -69,6 +70,15 @@ export function PortfolioTemplate({
         subtitle: translations.contact.subtitle,
         orConnect: translations.contact.orConnect,
         socialLinks,
+        nameLabel: translations.contact.nameLabel,
+        emailLabel: translations.contact.emailLabel,
+        messageLabel: translations.contact.messageLabel,
+        sendButton: translations.contact.sendButton,
+        modalTitle: translations.contact.modalTitle,
+        successMessage: translations.contact.successMessage,
+        errorMessage: translations.contact.errorMessage,
+        downloadCv: translations.contact.downloadCv,
+        validation: translations.contact.validation,
       }}
       footerProps={{
         builtWith: translations.footer.builtWith,

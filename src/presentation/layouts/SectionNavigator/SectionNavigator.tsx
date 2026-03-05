@@ -14,6 +14,7 @@ import { ExperienceSection } from "@/presentation/organisms/ExperienceSection";
 import { ContactSection } from "@/presentation/organisms/ContactSection";
 import { Footer } from "@/presentation/organisms/Footer";
 import type { TProjectDTO, TSkillDTO, TExperienceDTO, TSocialLinkDTO } from "@/application/dto";
+import type { TContactFormErrors } from "@/lib/schemas/contactForm";
 
 type TSectionNavigatorProps = {
   readonly heroProps: { greeting: string; name: string; role: string; tagline: string; ctaLabel: string };
@@ -21,7 +22,7 @@ type TSectionNavigatorProps = {
   readonly skillsProps: { title: string; subtitle: string; skills: TSkillDTO[]; categoryLabels: Record<string, string> };
   readonly projectsProps: { title: string; subtitle: string; projects: TProjectDTO[]; projectTranslations: Record<string, { title: string; description: string }>; sourceLabel: string; demoLabel: string };
   readonly experienceProps: { title: string; subtitle: string; experiences: TExperienceDTO[]; experienceTranslations: Record<string, { company: string; role: string; description: string }>; presentLabel: string };
-  readonly contactProps: { title: string; subtitle: string; orConnect: string; socialLinks: TSocialLinkDTO[] };
+  readonly contactProps: { title: string; subtitle: string; orConnect: string; socialLinks: TSocialLinkDTO[]; nameLabel: string; emailLabel: string; messageLabel: string; sendButton: string; modalTitle: string; successMessage: string; errorMessage: string; downloadCv: string; validation: TContactFormErrors };
   readonly footerProps: { builtWith: string; rights: string };
   readonly sectionLabels: Record<ESectionId, string>;
 };

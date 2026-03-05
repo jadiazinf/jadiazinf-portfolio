@@ -23,22 +23,22 @@ export default async function HomePage() {
   const socialLinks = getSocialLinks(staticSocialLinkRepository);
 
   const projectTranslations: Record<string, { title: string; description: string }> = {
+    kompii: { title: tProjects("kompii.title"), description: tProjects("kompii.description") },
+    carshop: { title: tProjects("carshop.title"), description: tProjects("carshop.description") },
+    eddu: { title: tProjects("eddu.title"), description: tProjects("eddu.description") },
     portfolio: { title: tProjects("portfolio.title"), description: tProjects("portfolio.description") },
-    ecommerce: { title: tProjects("ecommerce.title"), description: tProjects("ecommerce.description") },
-    "api-gateway": { title: tProjects("apiGateway.title"), description: tProjects("apiGateway.description") },
   };
 
   const experienceTranslations: Record<string, { company: string; role: string; description: string }> = {
-    "senior-dev": { company: tExperience("seniorDev.company"), role: tExperience("seniorDev.role"), description: tExperience("seniorDev.description") },
-    "fullstack-dev": { company: tExperience("fullstackDev.company"), role: tExperience("fullstackDev.role"), description: tExperience("fullstackDev.description") },
-    "junior-dev": { company: tExperience("juniorDev.company"), role: tExperience("juniorDev.role"), description: tExperience("juniorDev.description") },
+    kompii: { company: tExperience("kompii.company"), role: tExperience("kompii.role"), description: tExperience("kompii.description") },
+    gma: { company: tExperience("gma.company"), role: tExperience("gma.role"), description: tExperience("gma.description") },
+    eddu: { company: tExperience("eddu.company"), role: tExperience("eddu.role"), description: tExperience("eddu.description") },
   };
 
   const categoryLabels: Record<string, string> = {
     frontend: tSkillCategories("frontend"),
     backend: tSkillCategories("backend"),
     database: tSkillCategories("database"),
-    devops: tSkillCategories("devops"),
     tools: tSkillCategories("tools"),
   };
 
@@ -78,6 +78,22 @@ export default async function HomePage() {
           title: t("contact.title"),
           subtitle: t("contact.subtitle"),
           orConnect: t("contact.orConnect"),
+          nameLabel: t("contact.nameLabel"),
+          emailLabel: t("contact.emailLabel"),
+          messageLabel: t("contact.messageLabel"),
+          sendButton: t("contact.sendButton"),
+          modalTitle: t("contact.modalTitle"),
+          successMessage: t("contact.successMessage"),
+          errorMessage: t("contact.errorMessage"),
+          downloadCv: t("contact.downloadCv"),
+          validation: {
+            nameRequired: t("contact.nameRequired"),
+            nameMin: t("contact.nameMin"),
+            emailRequired: t("contact.emailRequired"),
+            emailInvalid: t("contact.emailInvalid"),
+            messageRequired: t("contact.messageRequired"),
+            messageMin: t("contact.messageMin"),
+          },
         },
         footer: {
           builtWith: t("footer.builtWith"),

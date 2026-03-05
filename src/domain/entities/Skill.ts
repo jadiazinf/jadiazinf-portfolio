@@ -2,7 +2,6 @@ export enum ESkillCategory {
   Frontend = "frontend",
   Backend = "backend",
   Database = "database",
-  DevOps = "devops",
   Tools = "tools",
 }
 

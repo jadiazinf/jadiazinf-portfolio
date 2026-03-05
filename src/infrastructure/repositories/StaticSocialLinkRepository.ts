@@ -13,12 +13,7 @@ const SOCIAL_LINKS: ISocialLink[] = [
     url: "https://linkedin.com/in/jadiazinf",
     label: "LinkedIn",
   },
-  {
-    platform: ESocialPlatform.Twitter,
-    url: "https://twitter.com/jadiazinf",
-    label: "Twitter",
-  },
-  {
+{
     platform: ESocialPlatform.Email,
     url: "mailto:jadiazinf@gmail.com",
     label: "Email",

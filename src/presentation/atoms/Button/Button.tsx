@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 
 type TButtonProps = Pick<
   HeroButtonProps,
-  "variant" | "color" | "size" | "isDisabled" | "startContent" | "endContent"
+  "variant" | "color" | "size" | "isDisabled" | "isLoading" | "startContent" | "endContent" | "type"
 > & {
   readonly children: React.ReactNode;
   readonly className?: string;

@@ -20,9 +20,9 @@
   },
   "about": {
     "title": "About Me",
-    "paragraph1": "I'm a Software Engineer based in Caracas, Venezuela, passionate about building elegant solutions to complex problems.",
-    "paragraph2": "With a strong foundation in computer science and a keen eye for detail, I specialize in developing scalable web applications using modern technologies.",
-    "paragraph3": "I believe in writing code that reads like prose — clean, intentional, and maintainable. Every project is an opportunity to push the boundaries of what's possible."
+    "paragraph1": "I'm a Computer Science Engineer graduated from Andrés Bello Catholic University (UCAB), based in Caracas, Venezuela, with over two years of experience building real-world applications using React, Next.js, TypeScript, and Node.js. I'm passionate about turning complex problems into intuitive, well-crafted digital experiences.",
+    "paragraph2": "I specialize in full-stack development with a strong focus on user experience and end-user needs. Every feature I build starts with one question: how will this make the user's life easier? From responsive interfaces and reporting modules to process automation and client-server connectivity, I design solutions that are not only scalable and maintainable, but genuinely useful for the people who use them.",
+    "paragraph3": "My goal is to write clean, well-structured code aligned with modern development best practices. I value technical quality because I know it directly impacts the final product and the user's experience. I see every project as an opportunity to keep growing professionally and deliver solutions that make a real impact."
   },
   "skills": {
     "title": "Skills & Technologies",
@@ -46,7 +46,17 @@
     "messageLabel": "Message",
     "nameLabel": "Name",
     "sendButton": "Send Message",
-    "orConnect": "Or connect with me on"
+    "orConnect": "Or connect with me on",
+    "modalTitle": "Send me a message",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Failed to send message. Please try again.",
+    "downloadCv": "Download CV",
+    "nameRequired": "Name is required",
+    "nameMin": "Name must be at least 2 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "messageRequired": "Message is required",
+    "messageMin": "Message must be at least 10 characters"
   },
   "footer": {
     "builtWith": "Built with Next.js, TypeScript & HeroUI",
@@ -61,41 +71,44 @@
     "es": "Español"
   },
   "projectData": {
+    "kompii": {
+      "title": "Kompii — Lending Platform",
+      "description": "Online lending platform operating in the Dominican Republic and Venezuela. Complete redesign of the admin app migrating from Material UI to ShadCN UI and from Page Router to App Router, implementing tRPC for type-safe communication. Mobile app development with Expo."
+    },
+    "carshop": {
+      "title": "CarShop — Automotive Marketplace",
+      "description": "Marketplace of automotive workshops where users access workshops, request quotes, contract services, and keep a service history. Companies view quality metrics, completed services, and customer satisfaction."
+    },
+    "eddu": {
+      "title": "Eddu — Collections Management",
+      "description": "Collections management platform for educational systems with modules for reports, process automation, collections, and notifications. Built with Next.js, TypeScript, Node.js, and Google Cloud Functions."
+    },
     "portfolio": {
       "title": "Personal Portfolio",
-      "description": "A modern, responsive portfolio website built with Next.js, TypeScript, and HeroUI. Features i18n, dark mode, and smooth section transitions."
-    },
-    "ecommerce": {
-      "title": "E-Commerce Platform",
-      "description": "Full-stack e-commerce solution with product management, shopping cart, payment processing, and order tracking."
-    },
-    "apiGateway": {
-      "title": "API Gateway",
-      "description": "High-performance API gateway built with Go, featuring rate limiting, authentication, load balancing, and service discovery."
+      "description": "A modern, responsive portfolio website built with Next.js, TypeScript, and HeroUI. Features i18n, dark mode, smooth section transitions, and contact form with Resend."
     }
   },
   "experienceData": {
-    "seniorDev": {
-      "company": "Tech Company",
-      "role": "Senior Software Engineer",
-      "description": "Leading development of scalable web applications, mentoring junior developers, and architecting microservices solutions."
-    },
-    "fullstackDev": {
-      "company": "Digital Agency",
+    "kompii": {
+      "company": "Kompii",
       "role": "Full Stack Developer",
-      "description": "Developed and maintained multiple client projects using modern web technologies, implementing CI/CD pipelines and automated testing."
+      "description": "Leading technology modernization and app maintenance in a monorepo with Turborepo and pnpm. Redesigned the admin app from Material UI to ShadCN UI, migrating from Page Router to App Router with tRPC. Developing the mobile app with Expo. Refactoring backend business logic for scalability. Integrating AI tools like Claude Code Agent to optimize workflow."
     },
-    "juniorDev": {
-      "company": "Startup Inc.",
-      "role": "Junior Developer",
-      "description": "Built responsive web interfaces and RESTful APIs, contributing to the core product used by thousands of users."
+    "gma": {
+      "company": "GMA Desarrollo",
+      "role": "Full Stack Developer",
+      "description": "Developed CarShop, a marketplace of automotive workshops where users access workshops, request quotes, contract services, and keep a service history. Workshop companies view quality metrics, completed services, customer satisfaction, and work tracking."
+    },
+    "eddu": {
+      "company": "Eddu",
+      "role": "Full Stack Developer",
+      "description": "Developed Eddu, a collections management platform for educational systems with modules for reports, process automation, collections, and notifications. Built with Next.js, TypeScript, Node.js, Google Cloud Functions, and PostgreSQL."
     }
   },
   "skillCategories": {
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Databases",
-    "devops": "DevOps",
     "tools": "Tools"
   }
 }

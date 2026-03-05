@@ -1,3 +1,4 @@
+export { ContactModal } from "./ContactModal";
 export { ProjectCard } from "./ProjectCard";
 export { SectionHeader } from "./SectionHeader";
 export { SectionIndicator } from "./SectionIndicator";

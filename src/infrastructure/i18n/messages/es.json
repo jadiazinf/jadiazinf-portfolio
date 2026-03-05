@@ -20,9 +20,9 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "paragraph1": "Soy un Ingeniero de Software de Caracas, Venezuela, apasionado por construir soluciones elegantes a problemas complejos.",
-    "paragraph2": "Con una sólida formación en informática y un ojo atento al detalle, me especializo en desarrollar aplicaciones web escalables utilizando tecnologías modernas.",
-    "paragraph3": "Creo en escribir código que se lea como prosa — limpio, intencional y mantenible. Cada proyecto es una oportunidad para superar los límites de lo posible."
+    "paragraph1": "Soy Ingeniero Informático graduado de la Universidad Católica Andrés Bello (UCAB), de Caracas, Venezuela, con más de dos años de experiencia construyendo aplicaciones reales con React, Next.js, TypeScript y Node.js. Me apasiona transformar problemas complejos en experiencias digitales intuitivas y bien diseñadas.",
+    "paragraph2": "Me especializo en desarrollo full-stack con un fuerte enfoque en la experiencia de usuario y las necesidades del usuario final. Cada funcionalidad que construyo parte de una pregunta: ¿cómo puedo hacer la vida del usuario más fácil? Desde interfaces responsivas y módulos de reportes hasta automatización de procesos y conectividad cliente-servidor, diseño soluciones que no solo son escalables y mantenibles, sino genuinamente útiles para las personas que las usan.",
+    "paragraph3": "Mi objetivo es escribir código limpio, bien estructurado y alineado con las mejores prácticas del desarrollo moderno. Valoro la calidad técnica porque sé que impacta directamente en el producto final y en la experiencia del usuario. Cada proyecto lo veo como una oportunidad para seguir creciendo profesionalmente y entregar soluciones que generen un impacto real."
   },
   "skills": {
     "title": "Habilidades y Tecnologías",
@@ -46,7 +46,17 @@
     "messageLabel": "Mensaje",
     "nameLabel": "Nombre",
     "sendButton": "Enviar Mensaje",
-    "orConnect": "O conéctate conmigo en"
+    "orConnect": "O conéctate conmigo en",
+    "modalTitle": "Envíame un mensaje",
+    "successMessage": "¡Mensaje enviado exitosamente!",
+    "errorMessage": "Error al enviar el mensaje. Inténtalo de nuevo.",
+    "downloadCv": "Descargar CV",
+    "nameRequired": "El nombre es obligatorio",
+    "nameMin": "El nombre debe tener al menos 2 caracteres",
+    "emailRequired": "El correo electrónico es obligatorio",
+    "emailInvalid": "Ingresa un correo electrónico válido",
+    "messageRequired": "El mensaje es obligatorio",
+    "messageMin": "El mensaje debe tener al menos 10 caracteres"
   },
   "footer": {
     "builtWith": "Construido con Next.js, TypeScript y HeroUI",
@@ -61,41 +71,44 @@
     "es": "Español"
   },
   "projectData": {
+    "kompii": {
+      "title": "Kompii — Plataforma de Prestamos",
+      "description": "Plataforma de prestamos en linea operando en Republica Dominicana y Venezuela. Rediseno completo de la app administrativa migrando de Material UI a ShadCN UI y de Page Router a App Router, implementando tRPC para comunicacion type-safe. Desarrollo de app movil con Expo."
+    },
+    "carshop": {
+      "title": "CarShop — Marketplace Automotriz",
+      "description": "Marketplace de talleres automotrices donde los usuarios acceden a talleres, solicitan presupuestos, contratan servicios y mantienen un historial. Las empresas visualizan metricas de calidad, servicios completados y satisfaccion del cliente."
+    },
+    "eddu": {
+      "title": "Eddu — Gestion de Cobranzas",
+      "description": "Plataforma de gestion de cobranzas para sistemas educativos con modulos de informes, automatizacion de procesos, colecciones y notificaciones. Construida con Next.js, TypeScript, Node.js y Google Cloud Functions."
+    },
     "portfolio": {
       "title": "Portafolio Personal",
-      "description": "Un sitio web de portafolio moderno y responsivo construido con Next.js, TypeScript y HeroUI. Con i18n, modo oscuro y transiciones suaves entre secciones."
-    },
-    "ecommerce": {
-      "title": "Plataforma E-Commerce",
-      "description": "Solución e-commerce full-stack con gestión de productos, carrito de compras, procesamiento de pagos y seguimiento de pedidos."
-    },
-    "apiGateway": {
-      "title": "API Gateway",
-      "description": "API gateway de alto rendimiento construido con Go, con limitación de tasa, autenticación, balanceo de carga y descubrimiento de servicios."
+      "description": "Un sitio web de portafolio moderno y responsivo construido con Next.js, TypeScript y HeroUI. Con i18n, modo oscuro, transiciones suaves entre secciones y formulario de contacto con Resend."
     }
   },
   "experienceData": {
-    "seniorDev": {
-      "company": "Empresa Tech",
-      "role": "Ingeniero de Software Senior",
-      "description": "Liderando el desarrollo de aplicaciones web escalables, mentoreando desarrolladores junior y diseñando soluciones de microservicios."
-    },
-    "fullstackDev": {
-      "company": "Agencia Digital",
+    "kompii": {
+      "company": "Kompii",
       "role": "Desarrollador Full Stack",
-      "description": "Desarrollo y mantenimiento de múltiples proyectos de clientes usando tecnologías web modernas, implementando pipelines CI/CD y pruebas automatizadas."
+      "description": "Liderando iniciativas de modernizacion tecnologica y mantenimiento de aplicaciones en un monorepo con Turborepo y pnpm. Rediseno completo de la app administrativa de Material UI a ShadCN UI, migrando de Page Router a App Router con tRPC. Desarrollo de app movil con Expo. Refactorizacion de logica de negocio del backend. Integracion de herramientas de IA como Claude Code Agent para optimizar el flujo de desarrollo."
     },
-    "juniorDev": {
-      "company": "Startup Inc.",
-      "role": "Desarrollador Junior",
-      "description": "Construcción de interfaces web responsivas y APIs RESTful, contribuyendo al producto principal usado por miles de usuarios."
+    "gma": {
+      "company": "GMA Desarrollo",
+      "role": "Desarrollador Full Stack",
+      "description": "Desarrollo de CarShop, un marketplace de talleres automotrices donde los usuarios acceden a talleres mecanicos, solicitan presupuestos, contratan servicios y mantienen un historial. Las empresas visualizan metricas de calidad, servicios completados, satisfaccion del cliente y seguimiento del trabajo."
+    },
+    "eddu": {
+      "company": "Eddu",
+      "role": "Desarrollador Full Stack",
+      "description": "Desarrollo de Eddu, una plataforma de gestion de cobranzas para sistemas educativos con modulos de informes, automatizacion de procesos, colecciones y notificaciones. Construida con Next.js, TypeScript, Node.js, Google Cloud Functions y PostgreSQL."
     }
   },
   "skillCategories": {
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Bases de Datos",
-    "devops": "DevOps",
     "tools": "Herramientas"
   }
 }

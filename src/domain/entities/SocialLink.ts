@@ -1,7 +1,6 @@
 export enum ESocialPlatform {
   GitHub = "github",
   LinkedIn = "linkedin",
-  Twitter = "twitter",
   Email = "email",
 }
 
