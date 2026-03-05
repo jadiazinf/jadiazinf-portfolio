@@ -1,0 +1,1 @@
+export { buildContactEmailHtml } from "./contactEmailTemplate";
