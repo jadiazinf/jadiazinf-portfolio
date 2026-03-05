@@ -48,6 +48,7 @@ export function useSectionNavigation() {
   }, [activeSection, navigateTo]);
 
   useScrollNavigation({ navigateNext, navigatePrevious });
+  useTouchNavigation({ navigateNext, navigatePrevious });
   useKeyboardNavigation({ navigateNext, navigatePrevious });
 
   return { activeSection, sectionStates, navigateTo };
@@ -123,6 +124,58 @@ function useScrollNavigation({
 
     window.addEventListener("wheel", handleWheel, { passive: false });
     return () => window.removeEventListener("wheel", handleWheel);
+  }, [navigateNext, navigatePrevious]);
+}
+
+function useTouchNavigation({
+  navigateNext,
+  navigatePrevious,
+}: {
+  navigateNext: () => void;
+  navigatePrevious: () => void;
+}) {
+  const touchStartY = useRef(0);
+  const touchStartTime = useRef(0);
+
+  useEffect(() => {
+    const SWIPE_THRESHOLD = 50;
+    const SWIPE_MAX_TIME = 500;
+
+    function handleTouchStart(event: TouchEvent) {
+      touchStartY.current = event.touches[0].clientY;
+      touchStartTime.current = Date.now();
+    }
+
+    function handleTouchEnd(event: TouchEvent) {
+      const deltaY = touchStartY.current - event.changedTouches[0].clientY;
+      const elapsed = Date.now() - touchStartTime.current;
+
+      if (elapsed > SWIPE_MAX_TIME || Math.abs(deltaY) < SWIPE_THRESHOLD) return;
+
+      const wrapper = getActiveSectionWrapper();
+
+      if (wrapper && canScrollInternally(wrapper)) {
+        const swipingDown = deltaY > 0;
+        const swipingUp = deltaY < 0;
+
+        if (swipingDown && !isAtBottom(wrapper)) return;
+        if (swipingUp && !isAtTop(wrapper)) return;
+      }
+
+      if (deltaY > 0) {
+        navigateNext();
+      } else {
+        navigatePrevious();
+      }
+    }
+
+    window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchend", handleTouchEnd, { passive: true });
+
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
   }, [navigateNext, navigatePrevious]);
 }
 

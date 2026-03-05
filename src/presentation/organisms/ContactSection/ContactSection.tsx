@@ -1,4 +1,5 @@
 import { Text } from "@/presentation/atoms/Text";
+import { SectionHeader } from "@/presentation/molecules/SectionHeader";
 import { SocialIcon } from "@/presentation/molecules/SocialIcon";
 import type { TSocialLinkDTO } from "@/application/dto";
 
@@ -25,11 +26,7 @@ export function ContactSection({
       <div className="absolute top-1/3 right-1/4 w-56 h-56 bg-primary/5 rounded-full blur-[60px] pointer-events-none" />
 
       <div className="relative z-10 max-w-3xl flex flex-col gap-10">
-        <div className="flex items-center gap-6">
-          <Text variant="overline" className="text-primary">05</Text>
-          <div className="w-12 h-px bg-primary/40" />
-          <Text variant="h2">{title}</Text>
-        </div>
+        <SectionHeader number="05" title={title} />
 
         <div className="flex flex-col gap-6">
           <Text variant="body" className="text-default-400">

@@ -1,4 +1,5 @@
 import { Text } from "@/presentation/atoms/Text";
+import { SectionHeader } from "@/presentation/molecules/SectionHeader";
 import { ProjectCard } from "@/presentation/molecules/ProjectCard";
 import type { TProjectDTO } from "@/application/dto";
 
@@ -31,11 +32,7 @@ export function ProjectsSection({
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-64 bg-primary/3 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl w-full flex flex-col gap-10">
-        <div className="flex items-center gap-6">
-          <Text variant="overline" className="text-primary">03</Text>
-          <div className="w-12 h-px bg-primary/40" />
-          <Text variant="h2">{title}</Text>
-        </div>
+        <SectionHeader number="03" title={title} />
 
         <Text variant="body" className="text-default-400">
           {subtitle}

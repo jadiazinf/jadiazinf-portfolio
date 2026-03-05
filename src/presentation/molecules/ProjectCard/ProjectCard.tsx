@@ -29,14 +29,14 @@ export function ProjectCard({
   return (
     <article
       className={cn(
-        "group grid grid-cols-[auto_1fr_auto] gap-6 md:gap-10 items-start py-8",
-        "border-b border-default-100 last:border-b-0",
+        "group py-8 border-b border-default-100 last:border-b-0",
         "hover:bg-content1/20 -mx-4 px-4 rounded-lg transition-colors duration-300",
+        "grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-4 md:gap-10 items-start",
         className
       )}
     >
-      {/* Number */}
-      <span className="text-3xl md:text-4xl font-bold text-default-200 group-hover:text-primary/40 transition-colors leading-none pt-1">
+      {/* Number + Title + Links (mobile: stacked, desktop: 3-col grid) */}
+      <span className="text-3xl md:text-4xl font-bold text-default-200 group-hover:text-primary/40 transition-colors leading-none">
         {number}
       </span>
 
@@ -60,10 +60,36 @@ export function ProjectCard({
             </span>
           ))}
         </div>
+
+        {/* Links — mobile only (below technologies) */}
+        <div className="flex items-center gap-3 mt-2 md:hidden">
+          {sourceUrl && (
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-medium text-default-400 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              {sourceLabel}
+              <ArrowUpRightIcon />
+            </a>
+          )}
+          {demoUrl && (
+            <a
+              href={demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs font-medium text-default-400 hover:text-primary transition-colors whitespace-nowrap"
+            >
+              {demoLabel}
+              <ArrowUpRightIcon />
+            </a>
+          )}
+        </div>
       </div>
 
-      {/* Links */}
-      <div className="flex flex-col gap-2 pt-1">
+      {/* Links column — desktop only */}
+      <div className="hidden md:flex flex-col gap-2 pt-1">
         {sourceUrl && (
           <a
             href={sourceUrl}

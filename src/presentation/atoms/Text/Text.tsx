@@ -14,7 +14,7 @@ const VARIANT_STYLES: Record<TTextVariant, string> = {
   h2: "text-4xl md:text-6xl font-bold tracking-tight leading-tight",
   h3: "text-2xl md:text-3xl font-semibold tracking-tight",
   h4: "text-lg md:text-xl font-semibold",
-  body: "text-base md:text-lg leading-relaxed",
+  body: "text-base md:text-lg leading-relaxed text-justify",
   caption: "text-sm text-default-400",
   overline: "text-xs uppercase tracking-[0.25em] text-default-500 font-medium",
 };

@@ -1,4 +1,5 @@
 import { Text } from "@/presentation/atoms/Text";
+import { SectionHeader } from "@/presentation/molecules/SectionHeader";
 import { SkillBadge } from "@/presentation/molecules/SkillBadge";
 import type { TSkillDTO } from "@/application/dto";
 
@@ -24,11 +25,7 @@ export function SkillsSection({ title, subtitle, skills, categoryLabels }: TSkil
       <div className="absolute bottom-0 left-1/4 w-96 h-48 bg-primary/4 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="relative z-10 max-w-4xl w-full flex flex-col gap-10">
-        <div className="flex items-center gap-6">
-          <Text variant="overline" className="text-primary">02</Text>
-          <div className="w-12 h-px bg-primary/40" />
-          <Text variant="h2">{title}</Text>
-        </div>
+        <SectionHeader number="02" title={title} />
 
         <Text variant="body" className="text-default-400">
           {subtitle}

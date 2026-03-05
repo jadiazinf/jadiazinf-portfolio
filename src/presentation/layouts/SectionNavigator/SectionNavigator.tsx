@@ -41,7 +41,7 @@ export function SectionNavigator({
   return (
     <div className="relative h-screen overflow-hidden">
       {/* Top-right controls */}
-      <div className="fixed top-6 right-8 z-50 flex items-center gap-1">
+      <div className="fixed top-4 right-3 md:top-6 md:right-8 z-50 flex items-center gap-1">
         <ThemeToggle />
         <LanguageSwitcher />
       </div>
