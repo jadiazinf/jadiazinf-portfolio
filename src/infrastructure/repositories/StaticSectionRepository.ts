@@ -1,6 +1,6 @@
 import type { ISection } from "@/domain/entities";
 import type { ISectionRepository } from "@/domain/ports";
-import { ESectionId, SECTION_ORDER } from "@/lib/constants";
+import { SECTION_ORDER } from "@/lib/constants";
 
 const SECTIONS: ISection[] = SECTION_ORDER.map((id, index) => ({
   id,

@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bun run build)"
+      "Bash(bun run build)",
+      "Bash(bun add -D prettier)",
+      "Bash(bun run check)"
     ]
   }
 }
