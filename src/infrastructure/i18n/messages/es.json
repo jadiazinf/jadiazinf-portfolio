@@ -83,6 +83,10 @@
       "title": "Eddu — Gestion de Cobranzas",
       "description": "Plataforma de gestion de cobranzas para sistemas educativos con modulos de informes, automatizacion de procesos, colecciones y notificaciones. Construida con Next.js, TypeScript, Node.js y Google Cloud Functions."
     },
+    "ministeriosId": {
+      "title": "Ministerios Id — Sitio Web Ministerial",
+      "description": "Sitio web institucional para un ministerio cristiano con sección hero con video de fondo, páginas informativas sobre doctrina, misión y alcance, formulario de voluntariado, formularios de donación y sistema de contacto con notificaciones por correo vía Resend. Construido con Next.js 15, HeroUI y navegación scroll-snap."
+    },
     "portfolio": {
       "title": "Portafolio Personal",
       "description": "Un sitio web de portafolio moderno y responsivo construido con Next.js, TypeScript y HeroUI. Con i18n, modo oscuro, transiciones suaves entre secciones y formulario de contacto con Resend."

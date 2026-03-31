@@ -83,6 +83,10 @@
       "title": "Eddu — Collections Management",
       "description": "Collections management platform for educational systems with modules for reports, process automation, collections, and notifications. Built with Next.js, TypeScript, Node.js, and Google Cloud Functions."
     },
+    "ministeriosId": {
+      "title": "Ministerios Id — Ministry Website",
+      "description": "Institutional website for a Christian ministry featuring a video hero section, multi-page about section with doctrine, mission, and outreach, volunteer application, donation forms, and contact system with email notifications via Resend. Built with Next.js 15, HeroUI, and scroll-snap navigation."
+    },
     "portfolio": {
       "title": "Personal Portfolio",
       "description": "A modern, responsive portfolio website built with Next.js, TypeScript, and HeroUI. Features i18n, dark mode, smooth section transitions, and contact form with Resend."

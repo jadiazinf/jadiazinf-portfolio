@@ -21,6 +21,13 @@ const PROJECTS: IProject[] = [
     technologies: ["Next.js", "TypeScript", "Node.js", "Google Cloud Functions", "PostgreSQL"],
   },
   {
+    id: "ministerios-id",
+    titleKey: "projectData.ministeriosId.title",
+    descriptionKey: "projectData.ministeriosId.description",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "HeroUI", "React Hook Form", "Zod", "Resend"],
+    demoUrl: "https://www.ministeriosid.com",
+  },
+  {
     id: "portfolio",
     titleKey: "projectData.portfolio.title",
     descriptionKey: "projectData.portfolio.description",

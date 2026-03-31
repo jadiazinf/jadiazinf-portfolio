@@ -3,7 +3,8 @@
     "allow": [
       "Bash(bun run build)",
       "Bash(bun add -D prettier)",
-      "Bash(bun run check)"
+      "Bash(bun run check)",
+      "Read(//home/jesusdicen/proyects/ministerios-id/nextsite/**)"
     ]
   }
 }

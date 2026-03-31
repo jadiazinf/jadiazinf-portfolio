@@ -26,6 +26,7 @@ export default async function HomePage() {
     kompii: { title: tProjects("kompii.title"), description: tProjects("kompii.description") },
     carshop: { title: tProjects("carshop.title"), description: tProjects("carshop.description") },
     eddu: { title: tProjects("eddu.title"), description: tProjects("eddu.description") },
+    "ministerios-id": { title: tProjects("ministeriosId.title"), description: tProjects("ministeriosId.description") },
     portfolio: { title: tProjects("portfolio.title"), description: tProjects("portfolio.description") },
   };
 
