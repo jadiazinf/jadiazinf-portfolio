@@ -5,7 +5,7 @@
 type TClientEnv = {
   // Add NEXT_PUBLIC_ vars here, e.g.:
   // SITE_URL: string;
-}
+};
 
 const requiredClientEnvs: (keyof TClientEnv)[] = [];
 
@@ -15,7 +15,9 @@ function getClientEnv(): TClientEnv {
   );
 
   if (missing.length > 0) {
-    throw new Error(`Missing client environment variables: ${missing.map((k) => `NEXT_PUBLIC_${k}`).join(", ")}`);
+    throw new Error(
+      `Missing client environment variables: ${missing.map((k) => `NEXT_PUBLIC_${k}`).join(", ")}`,
+    );
   }
 
   return {

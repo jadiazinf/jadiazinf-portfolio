@@ -10,7 +10,12 @@ type TSkillsSectionProps = {
   readonly categoryLabels: Record<string, string>;
 };
 
-export function SkillsSection({ title, subtitle, skills, categoryLabels }: TSkillsSectionProps) {
+export function SkillsSection({
+  title,
+  subtitle,
+  skills,
+  categoryLabels,
+}: TSkillsSectionProps) {
   const groupedSkills = groupByCategory(skills);
 
   return (
@@ -34,7 +39,10 @@ export function SkillsSection({ title, subtitle, skills, categoryLabels }: TSkil
         <div className="flex flex-col gap-8">
           {Object.entries(groupedSkills).map(([category, categorySkills]) => (
             <div key={category} className="flex flex-col gap-3">
-              <Text variant="caption" className="uppercase tracking-[0.2em] text-primary/80 font-semibold text-xs">
+              <Text
+                variant="caption"
+                className="uppercase tracking-[0.2em] text-primary/80 font-semibold text-xs"
+              >
                 {categoryLabels[category] ?? category}
               </Text>
               <div className="flex flex-wrap gap-2">

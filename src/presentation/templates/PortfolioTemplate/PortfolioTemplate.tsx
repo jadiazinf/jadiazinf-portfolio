@@ -2,16 +2,58 @@
 
 import { SectionNavigator } from "@/presentation/layouts/SectionNavigator";
 import type { ESectionId } from "@/lib/constants";
-import type { TProjectDTO, TSkillDTO, TExperienceDTO, TSocialLinkDTO } from "@/application/dto";
+import type {
+  TProjectDTO,
+  TSkillDTO,
+  TExperienceDTO,
+  TSocialLinkDTO,
+} from "@/application/dto";
 import type { TContactFormErrors } from "@/lib/schemas/contactForm";
 
 type TPortfolioTranslations = {
-  readonly hero: { greeting: string; name: string; role: string; tagline: string; cta: string };
+  readonly hero: {
+    greeting: string;
+    name: string;
+    role: string;
+    tagline: string;
+    cta: string;
+  };
   readonly about: { title: string; paragraphs: string[] };
-  readonly skills: { title: string; subtitle: string; categoryLabels: Record<string, string> };
-  readonly projects: { title: string; subtitle: string; sourceLabel: string; demoLabel: string; translations: Record<string, { title: string; description: string }> };
-  readonly experience: { title: string; subtitle: string; presentLabel: string; translations: Record<string, { company: string; role: string; description: string }> };
-  readonly contact: { title: string; subtitle: string; orConnect: string; nameLabel: string; emailLabel: string; messageLabel: string; sendButton: string; modalTitle: string; successMessage: string; errorMessage: string; downloadCv: string; validation: TContactFormErrors };
+  readonly skills: {
+    title: string;
+    subtitle: string;
+    categoryLabels: Record<string, string>;
+  };
+  readonly projects: {
+    title: string;
+    subtitle: string;
+    sourceLabel: string;
+    demoLabel: string;
+    translations: Record<string, { title: string; description: string }>;
+  };
+  readonly experience: {
+    title: string;
+    subtitle: string;
+    presentLabel: string;
+    translations: Record<
+      string,
+      { company: string; role: string; description: string }
+    >;
+  };
+  readonly contact: {
+    title: string;
+    subtitle: string;
+    orConnect: string;
+    nameLabel: string;
+    emailLabel: string;
+    messageLabel: string;
+    sendButton: string;
+    modalTitle: string;
+    successMessage: string;
+    errorMessage: string;
+    downloadCv: string;
+    validation: TContactFormErrors;
+  };
   readonly footer: { builtWith: string; rights: string };
   readonly sectionLabels: Record<ESectionId, string>;
 };

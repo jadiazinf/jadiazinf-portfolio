@@ -13,7 +13,11 @@ function escapeHtml(text: string): string {
     .replace(/'/g, "&#39;");
 }
 
-export function buildContactEmailHtml({ name, email, message }: TContactEmailData): string {
+export function buildContactEmailHtml({
+  name,
+  email,
+  message,
+}: TContactEmailData): string {
   const escapedName = escapeHtml(name);
   const escapedEmail = escapeHtml(email);
   const escapedMessage = escapeHtml(message).replace(/\n/g, "<br />");

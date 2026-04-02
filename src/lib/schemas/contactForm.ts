@@ -11,14 +11,8 @@ export type TContactFormErrors = {
 
 export function createContactFormSchema(errors: TContactFormErrors) {
   return z.object({
-    name: z
-      .string()
-      .min(1, errors.nameRequired)
-      .min(2, errors.nameMin),
-    email: z
-      .string()
-      .min(1, errors.emailRequired)
-      .email(errors.emailInvalid),
+    name: z.string().min(1, errors.nameRequired).min(2, errors.nameMin),
+    email: z.string().min(1, errors.emailRequired).email(errors.emailInvalid),
     message: z
       .string()
       .min(1, errors.messageRequired)
@@ -26,4 +20,6 @@ export function createContactFormSchema(errors: TContactFormErrors) {
   });
 }
 
-export type TContactFormData = z.infer<ReturnType<typeof createContactFormSchema>>;
+export type TContactFormData = z.infer<
+  ReturnType<typeof createContactFormSchema>
+>;

@@ -1,37 +1,46 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
-import { ESectionId, SECTION_ORDER, ANIMATION_DURATION_MS } from "@/lib/constants";
+import {
+  ESectionId,
+  SECTION_ORDER,
+  ANIMATION_DURATION_MS,
+} from "@/lib/constants";
 
 export type TSectionState = "active" | "entering" | "exiting" | "inactive";
 
 export function useSectionNavigation() {
-  const [activeSection, setActiveSection] = useState<ESectionId>(ESectionId.Hero);
-  const [sectionStates, setSectionStates] = useState<Record<ESectionId, TSectionState>>(
-    () => createInitialStates(ESectionId.Hero)
+  const [activeSection, setActiveSection] = useState<ESectionId>(
+    ESectionId.Hero,
   );
+  const [sectionStates, setSectionStates] = useState<
+    Record<ESectionId, TSectionState>
+  >(() => createInitialStates(ESectionId.Hero));
   const isTransitioning = useRef(false);
 
-  const navigateTo = useCallback((targetSection: ESectionId) => {
-    if (targetSection === activeSection || isTransitioning.current) return;
+  const navigateTo = useCallback(
+    (targetSection: ESectionId) => {
+      if (targetSection === activeSection || isTransitioning.current) return;
 
-    isTransitioning.current = true;
+      isTransitioning.current = true;
 
-    setSectionStates((prev) => ({
-      ...prev,
-      [activeSection]: "exiting",
-    }));
-
-    setTimeout(() => {
-      setSectionStates(createInitialStates(targetSection, "entering"));
-      setActiveSection(targetSection);
+      setSectionStates((prev) => ({
+        ...prev,
+        [activeSection]: "exiting",
+      }));
 
       setTimeout(() => {
-        setSectionStates(createInitialStates(targetSection, "active"));
-        isTransitioning.current = false;
-      }, ANIMATION_DURATION_MS + 100);
-    }, ANIMATION_DURATION_MS);
-  }, [activeSection]);
+        setSectionStates(createInitialStates(targetSection, "entering"));
+        setActiveSection(targetSection);
+
+        setTimeout(() => {
+          setSectionStates(createInitialStates(targetSection, "active"));
+          isTransitioning.current = false;
+        }, ANIMATION_DURATION_MS + 100);
+      }, ANIMATION_DURATION_MS);
+    },
+    [activeSection],
+  );
 
   const navigateNext = useCallback(() => {
     const currentIndex = SECTION_ORDER.indexOf(activeSection);
@@ -150,7 +159,8 @@ function useTouchNavigation({
       const deltaY = touchStartY.current - event.changedTouches[0].clientY;
       const elapsed = Date.now() - touchStartTime.current;
 
-      if (elapsed > SWIPE_MAX_TIME || Math.abs(deltaY) < SWIPE_THRESHOLD) return;
+      if (elapsed > SWIPE_MAX_TIME || Math.abs(deltaY) < SWIPE_THRESHOLD)
+        return;
 
       const wrapper = getActiveSectionWrapper();
 
@@ -204,13 +214,13 @@ function useKeyboardNavigation({
 
 function createInitialStates(
   activeId: ESectionId,
-  activeState: TSectionState = "active"
+  activeState: TSectionState = "active",
 ): Record<ESectionId, TSectionState> {
   return Object.values(ESectionId).reduce(
     (states, id) => ({
       ...states,
       [id]: id === activeId ? activeState : "inactive",
     }),
-    {} as Record<ESectionId, TSectionState>
+    {} as Record<ESectionId, TSectionState>,
   );
 }

@@ -33,7 +33,7 @@ export function ProjectCard({
         "group py-8 border-b border-default-100 last:border-b-0",
         "hover:bg-content1/20 -mx-4 px-4 rounded-lg transition-colors duration-300",
         "grid grid-cols-1 md:grid-cols-[auto_1fr_auto] gap-4 md:gap-10 items-start",
-        className
+        className,
       )}
     >
       {/* Number + Title + Links (mobile: stacked, desktop: 3-col grid) */}
@@ -43,11 +43,17 @@ export function ProjectCard({
 
       {/* Content */}
       <div className="flex flex-col gap-3 min-w-0">
-        <Text variant="h3" className="group-hover:text-primary transition-colors">
+        <Text
+          variant="h3"
+          className="group-hover:text-primary transition-colors"
+        >
           {title}
         </Text>
 
-        <Text variant="body" className="text-default-400 text-sm leading-relaxed max-w-lg">
+        <Text
+          variant="body"
+          className="text-default-400 text-sm leading-relaxed max-w-lg"
+        >
           {description}
         </Text>
 
@@ -117,7 +123,14 @@ export function ProjectCard({
 
 function ArrowUpRightIcon() {
   return (
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
       <path d="M7 17L17 7M17 7H7M17 7v10" />
     </svg>
   );

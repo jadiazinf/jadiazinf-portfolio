@@ -12,7 +12,10 @@ import { Input } from "@/presentation/atoms/Input";
 import { Textarea } from "@/presentation/atoms/Textarea";
 import { Button } from "@/presentation/atoms/Button";
 import { Text } from "@/presentation/atoms/Text";
-import { createContactFormSchema, type TContactFormErrors } from "@/lib/schemas/contactForm";
+import {
+  createContactFormSchema,
+  type TContactFormErrors,
+} from "@/lib/schemas/contactForm";
 
 type TContactModalProps = {
   readonly isOpen: boolean;
@@ -125,7 +128,10 @@ export function ContactModal({
               <Input
                 label={nameLabel}
                 value={name}
-                onChange={(v) => { setName(v); setFieldErrors((e) => ({ ...e, name: undefined })); }}
+                onChange={(v) => {
+                  setName(v);
+                  setFieldErrors((e) => ({ ...e, name: undefined }));
+                }}
                 isRequired
                 isInvalid={!!fieldErrors.name}
                 errorMessage={fieldErrors.name}
@@ -134,7 +140,10 @@ export function ContactModal({
                 label={emailLabel}
                 type="email"
                 value={email}
-                onChange={(v) => { setEmail(v); setFieldErrors((e) => ({ ...e, email: undefined })); }}
+                onChange={(v) => {
+                  setEmail(v);
+                  setFieldErrors((e) => ({ ...e, email: undefined }));
+                }}
                 isRequired
                 isInvalid={!!fieldErrors.email}
                 errorMessage={fieldErrors.email}
@@ -142,7 +151,10 @@ export function ContactModal({
               <Textarea
                 label={messageLabel}
                 value={message}
-                onChange={(v) => { setMessage(v); setFieldErrors((e) => ({ ...e, message: undefined })); }}
+                onChange={(v) => {
+                  setMessage(v);
+                  setFieldErrors((e) => ({ ...e, message: undefined }));
+                }}
                 minRows={4}
                 isRequired
                 isInvalid={!!fieldErrors.message}

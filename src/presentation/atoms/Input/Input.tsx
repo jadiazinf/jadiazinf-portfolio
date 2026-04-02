@@ -6,7 +6,16 @@ import { cn } from "@/lib/cn";
 
 type TInputProps = Pick<
   HeroInputProps,
-  "type" | "label" | "placeholder" | "isRequired" | "variant" | "size" | "value" | "name" | "isInvalid" | "errorMessage"
+  | "type"
+  | "label"
+  | "placeholder"
+  | "isRequired"
+  | "variant"
+  | "size"
+  | "value"
+  | "name"
+  | "isInvalid"
+  | "errorMessage"
 > & {
   readonly className?: string;
   readonly onChange?: (value: string) => void;
@@ -14,10 +23,6 @@ type TInputProps = Pick<
 
 export function Input({ className, onChange, ...props }: TInputProps) {
   return (
-    <HeroInput
-      className={cn(className)}
-      onValueChange={onChange}
-      {...props}
-    />
+    <HeroInput className={cn(className)} onValueChange={onChange} {...props} />
   );
 }

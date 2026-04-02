@@ -40,7 +40,9 @@ export function HeroSection({
 
       {/* Main content */}
       <div className="relative z-10 max-w-3xl flex flex-col gap-5">
-        <Text variant="overline" className="text-primary">{greeting}</Text>
+        <Text variant="overline" className="text-primary">
+          {greeting}
+        </Text>
 
         <Text variant="h1">
           <span className="bg-linear-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
@@ -76,7 +78,15 @@ export function HeroSection({
         onClick={() => onNavigate(ESectionId.About)}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-default-400 hover:text-primary transition-colors">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          className="text-default-400 hover:text-primary transition-colors"
+        >
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
       </button>
@@ -84,7 +94,13 @@ export function HeroSection({
   );
 }
 
-function DotGrid({ rows, cols }: { readonly rows: number; readonly cols: number }) {
+function DotGrid({
+  rows,
+  cols,
+}: {
+  readonly rows: number;
+  readonly cols: number;
+}) {
   return (
     <div className="flex flex-col gap-3">
       {Array.from({ length: rows }).map((_, r) => (

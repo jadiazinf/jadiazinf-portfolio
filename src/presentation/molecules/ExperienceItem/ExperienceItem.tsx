@@ -26,7 +26,12 @@ export function ExperienceItem({
   const period = `${startDate} — ${endDate ?? presentLabel}`;
 
   return (
-    <div className={cn("relative pl-8 pb-8 border-l border-default-100 last:pb-0", className)}>
+    <div
+      className={cn(
+        "relative pl-8 pb-8 border-l border-default-100 last:pb-0",
+        className,
+      )}
+    >
       <div className="absolute -left-1.5 top-1 w-3 h-3 rounded-full bg-primary/80 ring-4 ring-background" />
 
       <div className="flex flex-col gap-2">

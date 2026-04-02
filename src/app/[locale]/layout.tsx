@@ -7,6 +7,7 @@ import { Providers } from "@/presentation/providers";
 import { routing } from "@/infrastructure/i18n/config";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
+import { DEFAULT_LOCALE } from "@/lib/constants";
 import "../globals.css";
 
 const BASE_URL = "https://jadiazinf.com";
@@ -35,7 +36,7 @@ export async function generateMetadata({
   const title = t("title");
   const description = t("description");
   const keywords = t("keywords");
-  const url = `${BASE_URL}/${locale}`;
+  const url = locale === DEFAULT_LOCALE ? BASE_URL : `${BASE_URL}/${locale}`;
 
   return {
     metadataBase: new URL(BASE_URL),
@@ -59,7 +60,7 @@ export async function generateMetadata({
       canonical: url,
       languages: {
         en: `${BASE_URL}/en`,
-        es: `${BASE_URL}/es`,
+        es: BASE_URL,
       },
     },
     openGraph: {

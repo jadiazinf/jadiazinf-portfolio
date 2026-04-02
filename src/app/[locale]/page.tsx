@@ -1,7 +1,12 @@
 import { getTranslations } from "next-intl/server";
 import { PortfolioTemplate } from "@/presentation/templates/PortfolioTemplate";
 import { ESectionId } from "@/lib/constants";
-import { getProjects, getSkills, getExperiences, getSocialLinks } from "@/application/use-cases";
+import {
+  getProjects,
+  getSkills,
+  getExperiences,
+  getSocialLinks,
+} from "@/application/use-cases";
 import {
   staticProjectRepository,
   staticSkillRepository,
@@ -22,18 +27,51 @@ export default async function HomePage() {
   const experiences = getExperiences(staticExperienceRepository);
   const socialLinks = getSocialLinks(staticSocialLinkRepository);
 
-  const projectTranslations: Record<string, { title: string; description: string }> = {
-    kompii: { title: tProjects("kompii.title"), description: tProjects("kompii.description") },
-    carshop: { title: tProjects("carshop.title"), description: tProjects("carshop.description") },
-    eddu: { title: tProjects("eddu.title"), description: tProjects("eddu.description") },
-    "ministerios-id": { title: tProjects("ministeriosId.title"), description: tProjects("ministeriosId.description") },
-    portfolio: { title: tProjects("portfolio.title"), description: tProjects("portfolio.description") },
+  const projectTranslations: Record<
+    string,
+    { title: string; description: string }
+  > = {
+    kompii: {
+      title: tProjects("kompii.title"),
+      description: tProjects("kompii.description"),
+    },
+    carshop: {
+      title: tProjects("carshop.title"),
+      description: tProjects("carshop.description"),
+    },
+    eddu: {
+      title: tProjects("eddu.title"),
+      description: tProjects("eddu.description"),
+    },
+    "ministerios-id": {
+      title: tProjects("ministeriosId.title"),
+      description: tProjects("ministeriosId.description"),
+    },
+    portfolio: {
+      title: tProjects("portfolio.title"),
+      description: tProjects("portfolio.description"),
+    },
   };
 
-  const experienceTranslations: Record<string, { company: string; role: string; description: string }> = {
-    kompii: { company: tExperience("kompii.company"), role: tExperience("kompii.role"), description: tExperience("kompii.description") },
-    gma: { company: tExperience("gma.company"), role: tExperience("gma.role"), description: tExperience("gma.description") },
-    eddu: { company: tExperience("eddu.company"), role: tExperience("eddu.role"), description: tExperience("eddu.description") },
+  const experienceTranslations: Record<
+    string,
+    { company: string; role: string; description: string }
+  > = {
+    kompii: {
+      company: tExperience("kompii.company"),
+      role: tExperience("kompii.role"),
+      description: tExperience("kompii.description"),
+    },
+    gma: {
+      company: tExperience("gma.company"),
+      role: tExperience("gma.role"),
+      description: tExperience("gma.description"),
+    },
+    eddu: {
+      company: tExperience("eddu.company"),
+      role: tExperience("eddu.role"),
+      description: tExperience("eddu.description"),
+    },
   };
 
   const categoryLabels: Record<string, string> = {
@@ -55,7 +93,11 @@ export default async function HomePage() {
         },
         about: {
           title: t("about.title"),
-          paragraphs: [t("about.paragraph1"), t("about.paragraph2"), t("about.paragraph3")],
+          paragraphs: [
+            t("about.paragraph1"),
+            t("about.paragraph2"),
+            t("about.paragraph3"),
+          ],
         },
         skills: {
           title: t("skills.title"),

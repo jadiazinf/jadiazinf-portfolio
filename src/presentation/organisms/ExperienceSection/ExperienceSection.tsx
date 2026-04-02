@@ -7,7 +7,10 @@ type TExperienceSectionProps = {
   readonly title: string;
   readonly subtitle: string;
   readonly experiences: TExperienceDTO[];
-  readonly experienceTranslations: Record<string, { company: string; role: string; description: string }>;
+  readonly experienceTranslations: Record<
+    string,
+    { company: string; role: string; description: string }
+  >;
   readonly presentLabel: string;
 };
 

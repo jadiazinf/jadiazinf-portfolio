@@ -9,7 +9,11 @@ type TSectionIndicatorProps = {
   readonly onNavigate: (sectionId: ESectionId) => void;
 };
 
-export function SectionIndicator({ activeSection, labels, onNavigate }: TSectionIndicatorProps) {
+export function SectionIndicator({
+  activeSection,
+  labels,
+  onNavigate,
+}: TSectionIndicatorProps) {
   return (
     <>
       {/* Desktop: vertical dots on the right */}
@@ -29,7 +33,7 @@ export function SectionIndicator({ activeSection, labels, onNavigate }: TSection
                 className={cn(
                   "text-[11px] font-medium tracking-wider uppercase transition-all duration-300 opacity-0 translate-x-2 hidden lg:inline",
                   "lg:group-hover:opacity-100 lg:group-hover:translate-x-0",
-                  isActive && "lg:opacity-100 lg:translate-x-0 text-primary"
+                  isActive && "lg:opacity-100 lg:translate-x-0 text-primary",
                 )}
               >
                 {labels[sectionId]}
@@ -41,7 +45,7 @@ export function SectionIndicator({ activeSection, labels, onNavigate }: TSection
                     "block rounded-full transition-all duration-300",
                     isActive
                       ? "w-3 h-3 bg-primary shadow-[0_0_12px_rgba(59,130,246,0.6)]"
-                      : "w-1.5 h-1.5 bg-default-300 group-hover:bg-default-500"
+                      : "w-1.5 h-1.5 bg-default-300 group-hover:bg-default-500",
                   )}
                 />
               </span>
@@ -68,7 +72,7 @@ export function SectionIndicator({ activeSection, labels, onNavigate }: TSection
                   "block rounded-full transition-all duration-300",
                   isActive
                     ? "w-3 h-3 bg-primary shadow-[0_0_12px_rgba(59,130,246,0.6)]"
-                    : "w-2 h-2 bg-default-300"
+                    : "w-2 h-2 bg-default-300",
                 )}
               />
             </button>

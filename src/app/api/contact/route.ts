@@ -17,7 +17,10 @@ export async function POST(request: Request) {
   const result = contactSchema.safeParse(body);
 
   if (!result.success) {
-    return NextResponse.json({ error: "Invalid fields", details: result.error.issues }, { status: 400 });
+    return NextResponse.json(
+      { error: "Invalid fields", details: result.error.issues },
+      { status: 400 },
+    );
   }
 
   const { name, email, message } = result.data;
@@ -33,7 +36,10 @@ export async function POST(request: Request) {
 
   if (error) {
     console.error("Failed to send email:", error);
-    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 },
+    );
   }
 
   return NextResponse.json({ success: true });

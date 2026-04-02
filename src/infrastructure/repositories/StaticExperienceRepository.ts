@@ -8,7 +8,15 @@ const EXPERIENCES: IExperience[] = [
     roleKey: "experienceData.kompii.role",
     descriptionKey: "experienceData.kompii.description",
     startDate: "2025-11",
-    technologies: ["Next.js", "TypeScript", "tRPC", "ShadCN UI", "Expo", "Turborepo", "pnpm"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "tRPC",
+      "ShadCN UI",
+      "Expo",
+      "Turborepo",
+      "pnpm",
+    ],
   },
   {
     id: "gma",
@@ -26,7 +34,13 @@ const EXPERIENCES: IExperience[] = [
     descriptionKey: "experienceData.eddu.description",
     startDate: "2023-08",
     endDate: "2024-09",
-    technologies: ["Next.js", "TypeScript", "Node.js", "Google Cloud Functions", "PostgreSQL"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Google Cloud Functions",
+      "PostgreSQL",
+    ],
   },
 ];
 

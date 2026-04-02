@@ -20,7 +20,11 @@ export function AboutSection({ title, paragraphs }: TAboutSectionProps) {
 
         <div className="flex flex-col gap-6">
           {paragraphs.map((paragraph, index) => (
-            <Text key={index} variant="body" className="text-default-400 leading-loose">
+            <Text
+              key={index}
+              variant="body"
+              className="text-default-400 leading-loose"
+            >
               {paragraph}
             </Text>
           ))}

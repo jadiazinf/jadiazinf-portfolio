@@ -61,7 +61,10 @@ export function ContactSection({
             {subtitle}
           </Text>
 
-          <Text variant="caption" className="uppercase tracking-[0.2em] text-default-500 text-xs">
+          <Text
+            variant="caption"
+            className="uppercase tracking-[0.2em] text-default-500 text-xs"
+          >
             {orConnect}
           </Text>
 
@@ -72,7 +75,9 @@ export function ContactSection({
                 platform={link.platform}
                 url={link.url}
                 label={link.label}
-                onClick={link.platform === ESocialPlatform.Email ? onOpen : undefined}
+                onClick={
+                  link.platform === ESocialPlatform.Email ? onOpen : undefined
+                }
               />
             ))}
             <a
@@ -80,7 +85,13 @@ export function ContactSection({
               download
               className="flex items-center gap-3 px-5 py-3 rounded-lg bg-content1/50 border border-default-100 hover:bg-primary/10 hover:border-primary/30 transition-all duration-300 text-default-500 hover:text-primary"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                className="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />

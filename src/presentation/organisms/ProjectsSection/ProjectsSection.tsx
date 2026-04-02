@@ -7,7 +7,10 @@ type TProjectsSectionProps = {
   readonly title: string;
   readonly subtitle: string;
   readonly projects: TProjectDTO[];
-  readonly projectTranslations: Record<string, { title: string; description: string }>;
+  readonly projectTranslations: Record<
+    string,
+    { title: string; description: string }
+  >;
   readonly sourceLabel: string;
   readonly demoLabel: string;
 };

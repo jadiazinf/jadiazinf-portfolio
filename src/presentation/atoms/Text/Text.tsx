@@ -29,7 +29,14 @@ const VARIANT_TAGS: Record<TTextVariant, keyof React.JSX.IntrinsicElements> = {
   overline: "span",
 };
 
-export function Text({ variant = "body", children, className, as }: TTextProps) {
+export function Text({
+  variant = "body",
+  children,
+  className,
+  as,
+}: TTextProps) {
   const Tag = as ?? VARIANT_TAGS[variant];
-  return <Tag className={cn(VARIANT_STYLES[variant], className)}>{children}</Tag>;
+  return (
+    <Tag className={cn(VARIANT_STYLES[variant], className)}>{children}</Tag>
+  );
 }
