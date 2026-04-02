@@ -20,4 +20,4 @@ export const ANIMATION_DURATION_MS = 300;
 
 export const LOCALES = ["en", "es"] as const;
 export type TLocale = (typeof LOCALES)[number];
-export const DEFAULT_LOCALE: TLocale = "es";
+export const DEFAULT_LOCALE: TLocale = "en";
