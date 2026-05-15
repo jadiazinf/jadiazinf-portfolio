@@ -3,5 +3,6 @@ export { AboutSection } from "./AboutSection";
 export { SkillsSection } from "./SkillsSection";
 export { ProjectsSection } from "./ProjectsSection";
 export { ExperienceSection } from "./ExperienceSection";
+export { AchievementsSection } from "./AchievementsSection";
 export { ContactSection } from "./ContactSection";
 export { Footer } from "./Footer";

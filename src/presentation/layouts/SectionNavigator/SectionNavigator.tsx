@@ -11,12 +11,14 @@ import { AboutSection } from "@/presentation/organisms/AboutSection";
 import { SkillsSection } from "@/presentation/organisms/SkillsSection";
 import { ProjectsSection } from "@/presentation/organisms/ProjectsSection";
 import { ExperienceSection } from "@/presentation/organisms/ExperienceSection";
+import { AchievementsSection } from "@/presentation/organisms/AchievementsSection";
 import { ContactSection } from "@/presentation/organisms/ContactSection";
 import { Footer } from "@/presentation/organisms/Footer";
 import type {
   TProjectDTO,
   TSkillDTO,
   TExperienceDTO,
+  TAchievementDTO,
   TSocialLinkDTO,
 } from "@/application/dto";
 import type { TContactFormErrors } from "@/lib/schemas/contactForm";
@@ -54,6 +56,17 @@ type TSectionNavigatorProps = {
     >;
     presentLabel: string;
   };
+  readonly achievementsProps: {
+    title: string;
+    subtitle: string;
+    achievements: TAchievementDTO[];
+    achievementTranslations: Record<
+      string,
+      { title: string; description: string }
+    >;
+    sourceLabel: string;
+    demoLabel: string;
+  };
   readonly contactProps: {
     title: string;
     subtitle: string;
@@ -79,6 +92,7 @@ export function SectionNavigator({
   skillsProps,
   projectsProps,
   experienceProps,
+  achievementsProps,
   contactProps,
   footerProps,
   sectionLabels,
@@ -120,6 +134,10 @@ export function SectionNavigator({
 
         <SectionWrapper state={sectionStates[ESectionId.Experience]}>
           <ExperienceSection {...experienceProps} />
+        </SectionWrapper>
+
+        <SectionWrapper state={sectionStates[ESectionId.Achievements]}>
+          <AchievementsSection {...achievementsProps} />
         </SectionWrapper>
 
         <SectionWrapper state={sectionStates[ESectionId.Contact]}>

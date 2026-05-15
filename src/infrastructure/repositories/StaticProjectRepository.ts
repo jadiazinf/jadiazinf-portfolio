@@ -3,6 +3,31 @@ import type { IProjectRepository } from "@/domain/ports";
 
 const PROJECTS: IProject[] = [
   {
+    id: "diaz-tech-consulting",
+    titleKey: "projectData.diazTechConsulting.title",
+    descriptionKey: "projectData.diazTechConsulting.description",
+    technologies: [],
+  },
+  {
+    id: "la-torre",
+    titleKey: "projectData.laTorre.title",
+    descriptionKey: "projectData.laTorre.description",
+    technologies: [
+      "Next.js",
+      "Hono",
+      "TypeScript",
+      "PostgreSQL",
+      "Bun",
+      "Turborepo",
+      "Drizzle ORM",
+      "Zustand",
+      "Firebase",
+      "Tailwind CSS",
+    ],
+    sourceUrl: "https://github.com/jadiazinf/condominio-platform",
+    demoUrl: "https://condominio-platform-web.vercel.app/",
+  },
+  {
     id: "kompii",
     titleKey: "projectData.kompii.title",
     descriptionKey: "projectData.kompii.description",

@@ -10,6 +10,7 @@
     "skills": "Habilidades",
     "projects": "Proyectos",
     "experience": "Experiencia",
+    "achievements": "Logros",
     "contact": "Contacto"
   },
   "hero": {
@@ -39,6 +40,12 @@
     "title": "Experiencia",
     "subtitle": "Mi trayectoria profesional",
     "present": "Presente"
+  },
+  "achievements": {
+    "title": "Logros",
+    "subtitle": "Hitos clave en mi carrera",
+    "viewCode": "Código Fuente",
+    "viewDemo": "Demo en Vivo"
   },
   "contact": {
     "title": "Contáctame",
@@ -72,6 +79,14 @@
     "es": "Español"
   },
   "projectData": {
+    "diazTechConsulting": {
+      "title": "Diaz Tech Consulting — Mi Propia Empresa",
+      "description": "Fundé mi propia empresa de tecnología enfocada en desarrollo y licenciamiento de software. Desde definir la estrategia de negocio hasta captar clientes y entregar productos terminados, fui responsable de cada paso del proceso."
+    },
+    "laTorre": {
+      "title": "La Torre App — SaaS de Gestión de Condominios",
+      "description": "Construí una plataforma SaaS completa para la gestión de condominios desde cero. Maneja finanzas con soporte multi-moneda, votaciones en asambleas, trabajos automatizados en segundo plano, notificaciones en tiempo real, integración con pasarela de pago y control de acceso por roles — todo a lo largo de 74 tablas en la base de datos."
+    },
     "kompii": {
       "title": "Kompii — Plataforma de Prestamos",
       "description": "Plataforma de prestamos en linea operando en Republica Dominicana y Venezuela. Rediseno completo de la app administrativa migrando de Material UI a ShadCN UI y de Page Router a App Router, implementando tRPC para comunicacion type-safe. Desarrollo de app movil con Expo."
@@ -108,6 +123,16 @@
       "company": "Eddu",
       "role": "Desarrollador Full Stack",
       "description": "Desarrollo de Eddu, una plataforma de gestion de cobranzas para sistemas educativos con modulos de informes, automatizacion de procesos, colecciones y notificaciones. Construida con Next.js, TypeScript, Node.js, Google Cloud Functions y PostgreSQL."
+    }
+  },
+  "achievementData": {
+    "diaz-tech-consulting": {
+      "title": "Diaz Tech Consulting",
+      "description": "Emprendí mi propia empresa de tecnología en Caracas, Venezuela. Más allá de escribir código, aprendí a definir una estrategia de negocio, buscar clientes, negociar y entregar productos completos de principio a fin. Esta experiencia me dio una perspectiva que va mucho más allá del desarrollo — entender lo que un negocio necesita para funcionar."
+    },
+    "la-torre": {
+      "title": "La Torre App",
+      "description": "Concebí y construí un producto SaaS completo desde cero — desde la idea hasta una plataforma funcional lista para usuarios reales. La Torre App resuelve un problema real: la gestión de condominios. Maneja finanzas, asambleas, pagos, notificaciones y control de acceso para múltiples organizaciones. Tomé cada decisión técnica y creativa, diseñando un sistema con 74 tablas en base de datos y más de 175 pruebas automatizadas."
     }
   },
   "skillCategories": {

@@ -6,6 +6,7 @@ import type {
   TProjectDTO,
   TSkillDTO,
   TExperienceDTO,
+  TAchievementDTO,
   TSocialLinkDTO,
 } from "@/application/dto";
 import type { TContactFormErrors } from "@/lib/schemas/contactForm";
@@ -40,6 +41,13 @@ type TPortfolioTranslations = {
       { company: string; role: string; description: string }
     >;
   };
+  readonly achievements: {
+    title: string;
+    subtitle: string;
+    sourceLabel: string;
+    demoLabel: string;
+    translations: Record<string, { title: string; description: string }>;
+  };
   readonly contact: {
     title: string;
     subtitle: string;
@@ -63,6 +71,7 @@ type TPortfolioTemplateProps = {
   readonly projects: TProjectDTO[];
   readonly skills: TSkillDTO[];
   readonly experiences: TExperienceDTO[];
+  readonly achievements: TAchievementDTO[];
   readonly socialLinks: TSocialLinkDTO[];
 };
 
@@ -71,6 +80,7 @@ export function PortfolioTemplate({
   projects,
   skills,
   experiences,
+  achievements,
   socialLinks,
 }: TPortfolioTemplateProps) {
   return (
@@ -106,6 +116,14 @@ export function PortfolioTemplate({
         experiences,
         experienceTranslations: translations.experience.translations,
         presentLabel: translations.experience.presentLabel,
+      }}
+      achievementsProps={{
+        title: translations.achievements.title,
+        subtitle: translations.achievements.subtitle,
+        achievements,
+        achievementTranslations: translations.achievements.translations,
+        sourceLabel: translations.achievements.sourceLabel,
+        demoLabel: translations.achievements.demoLabel,
       }}
       contactProps={{
         title: translations.contact.title,

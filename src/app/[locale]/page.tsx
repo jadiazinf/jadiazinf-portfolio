@@ -5,32 +5,45 @@ import {
   getProjects,
   getSkills,
   getExperiences,
+  getAchievements,
   getSocialLinks,
 } from "@/application/use-cases";
 import {
   staticProjectRepository,
   staticSkillRepository,
   staticExperienceRepository,
+  staticAchievementRepository,
   staticSocialLinkRepository,
 } from "@/infrastructure/repositories";
 
 export default async function HomePage() {
-  const [t, tProjects, tExperience, tSkillCategories] = await Promise.all([
-    getTranslations(),
-    getTranslations("projectData"),
-    getTranslations("experienceData"),
-    getTranslations("skillCategories"),
-  ]);
+  const [t, tProjects, tExperience, tAchievements, tSkillCategories] =
+    await Promise.all([
+      getTranslations(),
+      getTranslations("projectData"),
+      getTranslations("experienceData"),
+      getTranslations("achievementData"),
+      getTranslations("skillCategories"),
+    ]);
 
   const projects = getProjects(staticProjectRepository);
   const skills = getSkills(staticSkillRepository);
   const experiences = getExperiences(staticExperienceRepository);
+  const achievements = getAchievements(staticAchievementRepository);
   const socialLinks = getSocialLinks(staticSocialLinkRepository);
 
   const projectTranslations: Record<
     string,
     { title: string; description: string }
   > = {
+    "diaz-tech-consulting": {
+      title: tProjects("diazTechConsulting.title"),
+      description: tProjects("diazTechConsulting.description"),
+    },
+    "la-torre": {
+      title: tProjects("laTorre.title"),
+      description: tProjects("laTorre.description"),
+    },
     kompii: {
       title: tProjects("kompii.title"),
       description: tProjects("kompii.description"),
@@ -71,6 +84,20 @@ export default async function HomePage() {
       company: tExperience("eddu.company"),
       role: tExperience("eddu.role"),
       description: tExperience("eddu.description"),
+    },
+  };
+
+  const achievementTranslations: Record<
+    string,
+    { title: string; description: string }
+  > = {
+    "diaz-tech-consulting": {
+      title: tAchievements("diaz-tech-consulting.title"),
+      description: tAchievements("diaz-tech-consulting.description"),
+    },
+    "la-torre": {
+      title: tAchievements("la-torre.title"),
+      description: tAchievements("la-torre.description"),
     },
   };
 
@@ -117,6 +144,13 @@ export default async function HomePage() {
           presentLabel: t("experience.present"),
           translations: experienceTranslations,
         },
+        achievements: {
+          title: t("achievements.title"),
+          subtitle: t("achievements.subtitle"),
+          sourceLabel: t("achievements.viewCode"),
+          demoLabel: t("achievements.viewDemo"),
+          translations: achievementTranslations,
+        },
         contact: {
           title: t("contact.title"),
           subtitle: t("contact.subtitle"),
@@ -148,12 +182,14 @@ export default async function HomePage() {
           [ESectionId.Skills]: t("nav.skills"),
           [ESectionId.Projects]: t("nav.projects"),
           [ESectionId.Experience]: t("nav.experience"),
+          [ESectionId.Achievements]: t("nav.achievements"),
           [ESectionId.Contact]: t("nav.contact"),
         },
       }}
       projects={projects}
       skills={skills}
       experiences={experiences}
+      achievements={achievements}
       socialLinks={socialLinks}
     />
   );

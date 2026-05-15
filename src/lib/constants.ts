@@ -4,6 +4,7 @@ export enum ESectionId {
   Skills = "skills",
   Projects = "projects",
   Experience = "experience",
+  Achievements = "achievements",
   Contact = "contact",
 }
 
@@ -13,6 +14,7 @@ export const SECTION_ORDER: ESectionId[] = [
   ESectionId.Skills,
   ESectionId.Projects,
   ESectionId.Experience,
+  ESectionId.Achievements,
   ESectionId.Contact,
 ];
 

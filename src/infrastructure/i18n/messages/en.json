@@ -10,6 +10,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "experience": "Experience",
+    "achievements": "Achievements",
     "contact": "Contact"
   },
   "hero": {
@@ -39,6 +40,12 @@
     "title": "Experience",
     "subtitle": "My professional journey",
     "present": "Present"
+  },
+  "achievements": {
+    "title": "Achievements",
+    "subtitle": "Key milestones in my career",
+    "viewCode": "Source Code",
+    "viewDemo": "Live Demo"
   },
   "contact": {
     "title": "Get in Touch",
@@ -72,6 +79,14 @@
     "es": "Español"
   },
   "projectData": {
+    "diazTechConsulting": {
+      "title": "Diaz Tech Consulting — My Own Company",
+      "description": "I founded my own technology company focused on software development and licensing. From defining the business strategy to acquiring clients and delivering finished products, I owned every step of the process."
+    },
+    "laTorre": {
+      "title": "La Torre App — Condominium Management SaaS",
+      "description": "I built a complete SaaS platform for condominium management from scratch. It handles finances with multi-currency support, assembly voting, automated background jobs, real-time notifications, payment gateway integration, and role-based access — all across 74 database tables."
+    },
     "kompii": {
       "title": "Kompii — Lending Platform",
       "description": "Online lending platform operating in the Dominican Republic and Venezuela. Complete redesign of the admin app migrating from Material UI to ShadCN UI and from Page Router to App Router, implementing tRPC for type-safe communication. Mobile app development with Expo."
@@ -108,6 +123,16 @@
       "company": "Eddu",
       "role": "Full Stack Developer",
       "description": "Developed Eddu, a collections management platform for educational systems with modules for reports, process automation, collections, and notifications. Built with Next.js, TypeScript, Node.js, Google Cloud Functions, and PostgreSQL."
+    }
+  },
+  "achievementData": {
+    "diaz-tech-consulting": {
+      "title": "Diaz Tech Consulting",
+      "description": "I started my own technology company in Caracas, Venezuela. Beyond writing code, I learned to define a business strategy, find clients, negotiate, and deliver complete products from start to finish. This experience gave me a perspective that goes far beyond development — understanding what a business needs to work."
+    },
+    "la-torre": {
+      "title": "La Torre App",
+      "description": "I conceived and built an entire SaaS product from zero — from the idea to a functional platform ready for real users. La Torre App solves a real problem: condominium management. It handles finances, assemblies, payments, notifications, and access control for multiple organizations. I made every technical and creative decision, designing a system with 74 database tables and over 175 automated tests."
     }
   },
   "skillCategories": {

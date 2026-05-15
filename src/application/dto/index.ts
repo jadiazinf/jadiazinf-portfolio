@@ -33,6 +33,16 @@ export type TExperienceDTO = {
   readonly technologies: string[];
 };
 
+export type TAchievementDTO = {
+  readonly id: string;
+  readonly titleKey: string;
+  readonly descriptionKey: string;
+  readonly date: string;
+  readonly url?: string;
+  readonly repoUrl?: string;
+  readonly technologies?: string[];
+};
+
 export type TSocialLinkDTO = {
   readonly platform: string;
   readonly url: string;
