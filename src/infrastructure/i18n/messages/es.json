@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Jesús Díaz | Ingeniero de Software y Desarrollador Web Full Stack",
-    "description": "Jesús Adolfo Díaz Centeno — Ingeniero de Software y Desarrollador Web Full Stack especializado en React, Next.js, TypeScript y Node.js. Explora mi portafolio de aplicaciones web, servicios de desarrollo de software y experiencia profesional. Disponible para trabajo remoto a nivel global.",
-    "keywords": "ingeniero de software, desarrollador web, desarrollador full stack, desarrollador React, desarrollador Next.js, desarrollador TypeScript, desarrollador Node.js, desarrollador freelance, portafolio desarrollador, portafolio desarrollador web, contratar desarrollador de software, desarrollador remoto, servicios de desarrollo de software, desarrollo de aplicaciones web, Jesús Díaz, Jesús Adolfo Díaz Centeno, jadiazinf"
+    "title": "Jesús Díaz | Ingeniero Full Stack · TypeScript, Go, React, PostgreSQL",
+    "description": "Jesús Adolfo Díaz Centeno — Ingeniero Full Stack con 3 años construyendo sistemas en producción de extremo a extremo con TypeScript y Go: SaaS multi-tenant, marketplaces, integraciones bancarias y servicios con LLM. Ciudadano español, autorizado para trabajar en la UE sin patrocinio. Remoto o reubicación.",
+    "keywords": "ingeniero full stack, ingeniero de software, desarrollador Go, desarrollador Golang, desarrollador TypeScript, desarrollador React, desarrollador Next.js, PostgreSQL, integraciones bancarias, pasarela de pagos, SaaS multi-tenant, arquitectura hexagonal, TDD, desarrollador remoto, ciudadanía española, trabajar en la UE, Jesús Díaz, Jesús Adolfo Díaz Centeno, jadiazinf, Artitek"
   },
   "nav": {
     "hero": "Inicio",
@@ -16,36 +16,41 @@
   "hero": {
     "greeting": "Hola, soy",
     "name": "Jesús Díaz",
-    "role": "Ingeniero de Software",
-    "tagline": "Creando experiencias digitales con código limpio y tecnologías modernas",
-    "cta": "Ver mi trabajo"
+    "role": "Ingeniero Full Stack · TypeScript · Go",
+    "tagline": "Construyo y opero sistemas en producción de extremo a extremo, del esquema de base de datos a la interfaz desplegada.",
+    "cta": "Ver mi trabajo",
+    "credentials": {
+      "citizenship": "Ciudadanía española · Autorizado para trabajar en la UE",
+      "english": "Inglés C2",
+      "availability": "Remoto (UTC−4) o reubicación"
+    }
   },
   "about": {
     "title": "Sobre Mí",
-    "paragraph1": "Soy Ingeniero Informático graduado de la Universidad Católica Andrés Bello (UCAB), de Caracas, Venezuela, con más de dos años de experiencia construyendo aplicaciones reales con React, Next.js, TypeScript y Node.js. Me apasiona transformar problemas complejos en experiencias digitales intuitivas y bien diseñadas.",
-    "paragraph2": "Me especializo en desarrollo full-stack con un fuerte enfoque en la experiencia de usuario y las necesidades del usuario final. Cada funcionalidad que construyo parte de una pregunta: ¿cómo puedo hacer la vida del usuario más fácil? Desde interfaces responsivas y módulos de reportes hasta automatización de procesos y conectividad cliente-servidor, diseño soluciones que no solo son escalables y mantenibles, sino genuinamente útiles para las personas que las usan.",
-    "paragraph3": "Mi objetivo es escribir código limpio, bien estructurado y alineado con las mejores prácticas del desarrollo moderno. Valoro la calidad técnica porque sé que impacta directamente en el producto final y en la experiencia del usuario. Cada proyecto lo veo como una oportunidad para seguir creciendo profesionalmente y entregar soluciones que generen un impacto real."
+    "paragraph1": "Ingeniero Informático por la Universidad Católica Andrés Bello (UCAB) y ciudadano español, con 3 años construyendo sistemas en producción de extremo a extremo — del esquema de base de datos a la interfaz desplegada.",
+    "paragraph2": "Trabajo con TypeScript y Go. He llevado a producción y operado SaaS multi-tenant, marketplaces, integraciones bancarias y servicios con LLM, con testing automatizado como norma y no como añadido: La Torre acumula 2.900 tests automatizados y Artitek Payments, 740.",
+    "paragraph3": "Desde 2026 dirijo Artitek, mi consultora de desarrollo, donde soy el único ingeniero que diseña, construye y opera tres sistemas en producción — incluida la relación técnica directa con el banco detrás de la integración de pagos. Llevé el primero de ellos de la arquitectura al primer cliente pagando en seis meses."
   },
   "skills": {
     "title": "Habilidades y Tecnologías",
-    "subtitle": "Herramientas y tecnologías con las que trabajo a diario"
+    "subtitle": "Herramientas, lenguajes y prácticas con los que trabajo a diario"
   },
   "projects": {
     "title": "Proyectos Destacados",
-    "subtitle": "Una selección de proyectos que he construido",
+    "subtitle": "Una selección de sistemas que he construido y operado",
     "viewCode": "Código Fuente",
-    "viewDemo": "Demo en Vivo"
+    "viewDemo": "Ver en Vivo"
   },
   "experience": {
     "title": "Experiencia",
     "subtitle": "Mi trayectoria profesional",
-    "present": "Presente"
+    "present": "Actualidad"
   },
   "achievements": {
     "title": "Logros",
     "subtitle": "Hitos clave en mi carrera",
     "viewCode": "Código Fuente",
-    "viewDemo": "Demo en Vivo"
+    "viewDemo": "Ver en Vivo"
   },
   "contact": {
     "title": "Contáctame",
@@ -79,66 +84,93 @@
     "es": "Español"
   },
   "projectData": {
-    "diazTechConsulting": {
-      "title": "Diaz Tech Consulting — Mi Propia Empresa",
-      "description": "Fundé mi propia empresa de tecnología enfocada en desarrollo y licenciamiento de software. Desde definir la estrategia de negocio hasta captar clientes y entregar productos terminados, fui responsable de cada paso del proceso."
-    },
     "laTorre": {
-      "title": "La Torre App — SaaS de Gestión de Condominios",
-      "description": "Construí una plataforma SaaS completa para la gestión de condominios desde cero. Maneja finanzas con soporte multi-moneda, votaciones en asambleas, trabajos automatizados en segundo plano, notificaciones en tiempo real, integración con pasarela de pago y control de acceso por roles — todo a lo largo de 74 tablas en la base de datos."
+      "title": "La Torre — SaaS multi-tenant de administración de condominios",
+      "description": "Motor de cuotas con prorrateo por alícuota, doble moneda a tasa oficial, asignación FIFO de pagos a cargos y conciliación bancaria, más workers en segundo plano para morosidad, recordatorios y votaciones. Arquitectura por capas sobre un monorepo de aplicaciones y paquetes compartidos, con resultado tipado ok/error en vez de excepciones. 2.900 tests automatizados. Incluye lectura de comprobantes por foto: el residente sube la imagen y el formulario se rellena solo."
+    },
+    "artitekPayments": {
+      "title": "Artitek Payments — pasarela de pagos multi-tenant",
+      "description": "30 dominios en arquitectura hexagonal integrados con la banca venezolana: C2P, débito inmediato SIMF, POS, transferencias, reversos y checkout alojado. Aislamiento por tenant, idempotencia por referencia externa, webhooks firmados con reintentos, circuit breaker sobre el banco, identidad del consumidor por mTLS y datos de tarjeta redactados a nivel de tipo (OWASP ASVS Nivel 2). Conciliación del ledger local contra el banco. 740 tests automatizados."
+    },
+    "artitekExtraction": {
+      "title": "Artitek Extraction — extracción documental con LLM",
+      "description": "API asíncrona con webhooks firmados que devuelve datos tipados con confianza por campo, nunca un veredicto: el umbral de confianza manda a revisión humana antes de que un monto llegue al ledger. Incluye un arnés de evaluación contra un golden set etiquetado a mano que compara modelos por precisión y coste por documento."
     },
     "kompii": {
-      "title": "Kompii — Plataforma de Prestamos",
-      "description": "Plataforma de prestamos en linea operando en Republica Dominicana y Venezuela. Rediseno completo de la app administrativa migrando de Material UI a ShadCN UI y de Page Router a App Router, implementando tRPC para comunicacion type-safe. Desarrollo de app movil con Expo."
+      "title": "Kompii — marketplace de vehículos a consignación",
+      "description": "El dueño deja el vehículo en la plataforma, que lo publica y lo vende por él y le liquida el importe menos la comisión. Modelé el ciclo de vida del vehículo entre contrato de consignación, publicación, reserva, venta y liquidación, con su propio estado, permisos e implicaciones de dinero en cada etapa. Lideré el rediseño completo del producto sin interrumpir el servicio."
     },
     "carshop": {
-      "title": "CarShop — Marketplace Automotriz",
-      "description": "Marketplace de talleres automotrices donde los usuarios acceden a talleres, solicitan presupuestos, contratan servicios y mantienen un historial. Las empresas visualizan metricas de calidad, servicios completados y satisfaccion del cliente."
+      "title": "CarShop — marketplace automotriz",
+      "description": "Marketplace de talleres automotrices donde los usuarios solicitan presupuestos, contratan servicios y mantienen un historial, y las empresas visualizan métricas de calidad y satisfacción. Migré la plataforma de Ruby on Rails a Next.js reconstruyendo el frontend y la capa de API sin perder funcionalidad existente."
     },
     "eddu": {
-      "title": "Eddu — Gestion de Cobranzas",
-      "description": "Plataforma de gestion de cobranzas para sistemas educativos con modulos de informes, automatizacion de procesos, colecciones y notificaciones. Construida con Next.js, TypeScript, Node.js y Google Cloud Functions."
+      "title": "Eddu — plataforma educativa",
+      "description": "Plataforma educativa construida y operada de extremo a extremo, del diseño de la base de datos al frontend completo, a lo largo de sucesivas entregas de funcionalidades. Módulos de informes, automatización de procesos, cobranzas y notificaciones."
     },
     "ministeriosId": {
-      "title": "Ministerios Id — Sitio Web Ministerial",
-      "description": "Sitio web institucional para un ministerio cristiano con sección hero con video de fondo, páginas informativas sobre doctrina, misión y alcance, formulario de voluntariado, formularios de donación y sistema de contacto con notificaciones por correo vía Resend. Construido con Next.js 15, HeroUI y navegación scroll-snap."
+      "title": "Ministerios Id — sitio web institucional",
+      "description": "Sitio institucional con sección hero en vídeo, páginas de doctrina, misión y alcance, formularios de voluntariado y donación, y sistema de contacto con notificaciones por correo vía Resend."
     },
     "portfolio": {
-      "title": "Portafolio Personal",
-      "description": "Un sitio web de portafolio moderno y responsivo construido con Next.js, TypeScript y HeroUI. Con i18n, modo oscuro, transiciones suaves entre secciones y formulario de contacto con Resend."
+      "title": "Portafolio personal",
+      "description": "Este sitio. Next.js con App Router, arquitectura por capas (dominio, aplicación, infraestructura, presentación), i18n, modo oscuro y formulario de contacto con Resend."
     }
   },
   "experienceData": {
     "kompii": {
       "company": "Kompii",
-      "role": "Desarrollador Full Stack",
-      "description": "Liderando iniciativas de modernizacion tecnologica y mantenimiento de aplicaciones en un monorepo con Turborepo y pnpm. Rediseno completo de la app administrativa de Material UI a ShadCN UI, migrando de Page Router a App Router con tRPC. Desarrollo de app movil con Expo. Refactorizacion de logica de negocio del backend. Integracion de herramientas de IA como Claude Code Agent para optimizar el flujo de desarrollo."
+      "role": "Ingeniero Full Stack",
+      "description": "Desarrollo funcionalidades de extremo a extremo en un marketplace de vehículos a consignación en producción. Modelo el ciclo de vida del vehículo entre contrato, publicación, reserva, venta y liquidación al consignante, con su propio estado, permisos e implicaciones de dinero en cada etapa. Lideré el rediseño completo del producto, reconstruyendo la interfaz sin interrumpir el servicio a los usuarios existentes. Monorepo TypeScript con Turborepo, Next.js, tRPC y PostgreSQL."
+    },
+    "artitek": {
+      "company": "Artitek",
+      "role": "Fundador e Ingeniero Full Stack",
+      "description": "Dirijo una consultora de desarrollo de software: único ingeniero diseñando, construyendo y operando tres sistemas en producción, incluida la relación técnica directa con el banco detrás de la integración de pagos. Llevé el primero de ellos de la arquitectura al primer cliente pagando en seis meses, sostenido de extremo a extremo con TDD e integración continua."
     },
     "gma": {
       "company": "GMA Desarrollo",
-      "role": "Desarrollador Full Stack",
-      "description": "Desarrollo de CarShop, un marketplace de talleres automotrices donde los usuarios acceden a talleres mecanicos, solicitan presupuestos, contratan servicios y mantienen un historial. Las empresas visualizan metricas de calidad, servicios completados, satisfaccion del cliente y seguimiento del trabajo."
+      "role": "Ingeniero Full Stack",
+      "description": "Responsable de un marketplace automotriz de extremo a extremo: modelo de datos, servicios de backend y producto de cara al usuario. Migré la plataforma de Ruby on Rails a Next.js, reconstruyendo el frontend y la capa de API sin perder funcionalidad existente."
     },
     "eddu": {
       "company": "Eddu",
-      "role": "Desarrollador Full Stack",
-      "description": "Desarrollo de Eddu, una plataforma de gestion de cobranzas para sistemas educativos con modulos de informes, automatizacion de procesos, colecciones y notificaciones. Construida con Next.js, TypeScript, Node.js, Google Cloud Functions y PostgreSQL."
+      "role": "Ingeniero Full Stack",
+      "description": "Construí y operé una plataforma educativa de extremo a extremo, del diseño de la base de datos al frontend completo, a lo largo de sucesivas entregas de funcionalidades."
     }
   },
   "achievementData": {
-    "diaz-tech-consulting": {
-      "title": "Diaz Tech Consulting",
-      "description": "Emprendí mi propia empresa de tecnología en Caracas, Venezuela. Más allá de escribir código, aprendí a definir una estrategia de negocio, buscar clientes, negociar y entregar productos completos de principio a fin. Esta experiencia me dio una perspectiva que va mucho más allá del desarrollo — entender lo que un negocio necesita para funcionar."
+    "artitek": {
+      "title": "Fundé Artitek",
+      "description": "Monté mi propia consultora de desarrollo de software. Más allá de escribir código, aprendí a definir estrategia, captar clientes, negociar con un banco y entregar producto de principio a fin. Soy el único ingeniero detrás de tres sistemas en producción, y llevé el primero de la arquitectura al primer cliente pagando en seis meses."
+    },
+    "artitek-payments": {
+      "title": "Pasarela de pagos certificable en producción",
+      "description": "Diseñé y operé una pasarela multi-tenant integrada directamente con la banca venezolana, sosteniendo yo mismo la relación técnica con el banco. 30 dominios en arquitectura hexagonal y 740 tests automatizados, con idempotencia, circuit breaker, webhooks firmados, mTLS y datos de tarjeta redactados a nivel de tipo siguiendo OWASP ASVS Nivel 2."
     },
     "la-torre": {
       "title": "La Torre App",
-      "description": "Concebí y construí un producto SaaS completo desde cero — desde la idea hasta una plataforma funcional lista para usuarios reales. La Torre App resuelve un problema real: la gestión de condominios. Maneja finanzas, asambleas, pagos, notificaciones y control de acceso para múltiples organizaciones. Tomé cada decisión técnica y creativa, diseñando un sistema con 74 tablas en base de datos y más de 175 pruebas automatizadas."
+      "description": "Concebí y construí un producto SaaS completo desde cero, de la idea al primer cliente pagando en seis meses. Motor de cuotas con prorrateo, doble moneda, conciliación bancaria y workers en segundo plano, sobre un monorepo por capas con resultado tipado ok/error en vez de excepciones y 2.900 tests automatizados."
     }
   },
   "skillCategories": {
+    "languages": "Lenguajes",
     "frontend": "Frontend",
     "backend": "Backend",
-    "database": "Bases de Datos",
-    "tools": "Herramientas"
+    "database": "Datos",
+    "infrastructure": "Infraestructura",
+    "ai": "IA",
+    "practices": "Prácticas"
+  },
+  "skillData": {
+    "microservices": "Microservicios",
+    "schemaDesign": "Diseño de esquemas y migraciones",
+    "llmIntegration": "Integración de LLM",
+    "modelEvaluation": "Evaluación de modelos",
+    "agentAssisted": "Desarrollo asistido por agentes",
+    "testing": "Testing unitario e integración",
+    "hexagonal": "Arquitectura hexagonal",
+    "monorepos": "Monorepos",
+    "agile": "Metodologías ágiles"
   }
 }

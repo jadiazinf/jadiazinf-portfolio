@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Jesús Díaz | Software Engineer & Full Stack Web Developer",
-    "description": "Jesús Adolfo Díaz Centeno — Software Engineer and Full Stack Web Developer specializing in React, Next.js, TypeScript and Node.js. Explore my portfolio of web applications, freelance software development services, and professional experience. Available for remote work worldwide.",
-    "keywords": "software engineer, web developer, full stack developer, React developer, Next.js developer, TypeScript developer, Node.js developer, freelance software developer, software developer portfolio, web developer portfolio, hire software developer, remote developer, software development services, web application development, Jesús Díaz, Jesús Adolfo Díaz Centeno, jadiazinf"
+    "title": "Jesús Díaz | Full Stack Engineer · TypeScript, Go, React, PostgreSQL",
+    "description": "Jesús Adolfo Díaz Centeno — Full Stack Engineer with 3 years building production systems end to end across TypeScript and Go: multi-tenant SaaS, marketplaces, banking integrations and LLM services. Spanish citizen with EU work authorization, no sponsorship required. Remote or relocation.",
+    "keywords": "full stack engineer, software engineer, Go developer, Golang developer, TypeScript developer, React developer, Next.js developer, PostgreSQL, banking integrations, payment gateway, multi-tenant SaaS, hexagonal architecture, TDD, remote developer, EU work authorization, Spanish citizen, Jesús Díaz, Jesús Adolfo Díaz Centeno, jadiazinf, Artitek"
   },
   "nav": {
     "hero": "Home",
@@ -16,25 +16,30 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Jesús Díaz",
-    "role": "Software Engineer",
-    "tagline": "Crafting digital experiences with clean code and modern technologies",
-    "cta": "View my work"
+    "role": "Full Stack Engineer · TypeScript · Go",
+    "tagline": "I build and operate production systems end to end, from the database schema to the deployed UI.",
+    "cta": "View my work",
+    "credentials": {
+      "citizenship": "Spanish citizen · EU work authorization",
+      "english": "English C2",
+      "availability": "Remote (UTC−4, full US overlap) or relocation"
+    }
   },
   "about": {
     "title": "About Me",
-    "paragraph1": "I'm a Computer Science Engineer graduated from Andrés Bello Catholic University (UCAB), based in Caracas, Venezuela, with over two years of experience building real-world applications using React, Next.js, TypeScript, and Node.js. I'm passionate about turning complex problems into intuitive, well-crafted digital experiences.",
-    "paragraph2": "I specialize in full-stack development with a strong focus on user experience and end-user needs. Every feature I build starts with one question: how will this make the user's life easier? From responsive interfaces and reporting modules to process automation and client-server connectivity, I design solutions that are not only scalable and maintainable, but genuinely useful for the people who use them.",
-    "paragraph3": "My goal is to write clean, well-structured code aligned with modern development best practices. I value technical quality because I know it directly impacts the final product and the user's experience. I see every project as an opportunity to keep growing professionally and deliver solutions that make a real impact."
+    "paragraph1": "Computer Engineering graduate from Andrés Bello Catholic University (UCAB) and a Spanish citizen, with 3 years building production systems end to end — from the database schema to the deployed UI.",
+    "paragraph2": "I work across TypeScript and Go. I have shipped and operated multi-tenant SaaS, marketplaces, banking integrations and LLM services, with automated testing as a default rather than an afterthought: La Torre carries 2,900 automated tests and Artitek Payments 740.",
+    "paragraph3": "Since 2026 I have run Artitek, my own software consultancy, where I am the sole engineer designing, building and operating three production systems — including the direct technical relationship with the bank behind the payment integration. I took the first of them from architecture to a paying client in six months."
   },
   "skills": {
     "title": "Skills & Technologies",
-    "subtitle": "Tools and technologies I work with daily"
+    "subtitle": "Tools, languages and practices I work with daily"
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "A selection of projects I've built",
+    "subtitle": "A selection of systems I have built and operated",
     "viewCode": "Source Code",
-    "viewDemo": "Live Demo"
+    "viewDemo": "View Live"
   },
   "experience": {
     "title": "Experience",
@@ -45,7 +50,7 @@
     "title": "Achievements",
     "subtitle": "Key milestones in my career",
     "viewCode": "Source Code",
-    "viewDemo": "Live Demo"
+    "viewDemo": "View Live"
   },
   "contact": {
     "title": "Get in Touch",
@@ -79,66 +84,93 @@
     "es": "Español"
   },
   "projectData": {
-    "diazTechConsulting": {
-      "title": "Diaz Tech Consulting — My Own Company",
-      "description": "I founded my own technology company focused on software development and licensing. From defining the business strategy to acquiring clients and delivering finished products, I owned every step of the process."
-    },
     "laTorre": {
-      "title": "La Torre App — Condominium Management SaaS",
-      "description": "I built a complete SaaS platform for condominium management from scratch. It handles finances with multi-currency support, assembly voting, automated background jobs, real-time notifications, payment gateway integration, and role-based access — all across 74 database tables."
+      "title": "La Torre — multi-tenant SaaS for condominium administration",
+      "description": "Assessment engine with pro-rating by aliquot, dual currency at the official rate, FIFO allocation of payments to charges and bank reconciliation, plus background workers for overdue detection, reminders and voting. Layered architecture across a monorepo of applications and shared packages, using a typed ok/error result instead of exceptions. 2,900 automated tests. Includes receipt reading from a photo: the resident uploads an image and the form fills itself in."
+    },
+    "artitekPayments": {
+      "title": "Artitek Payments — multi-tenant payment gateway",
+      "description": "30 domains in a hexagonal architecture integrated with Venezuelan banking: C2P, SIMF instant debit, POS, transfers, reversals and hosted checkout. Per-tenant isolation, idempotency by external reference, signed webhooks with retries, a circuit breaker over the bank, consumer identity via mTLS and card data redacted at the type level (OWASP ASVS L2). Reconciliation of the local ledger against the bank. 740 automated tests."
+    },
+    "artitekExtraction": {
+      "title": "Artitek Extraction — LLM document extraction service",
+      "description": "Async API with signed webhooks returning typed data and per-field confidence, never a verdict: the confidence threshold routes to human review before an amount reaches the ledger. Includes an evaluation harness against a hand-labelled golden set that compares models on accuracy and cost per document."
     },
     "kompii": {
-      "title": "Kompii — Lending Platform",
-      "description": "Online lending platform operating in the Dominican Republic and Venezuela. Complete redesign of the admin app migrating from Material UI to ShadCN UI and from Page Router to App Router, implementing tRPC for type-safe communication. Mobile app development with Expo."
+      "title": "Kompii — vehicle consignment marketplace",
+      "description": "The owner leaves the car with the platform, which lists and sells it on their behalf and settles the proceeds minus commission. I modelled the vehicle lifecycle across consignment agreement, listing, reservation, sale and seller payout — each stage with its own state, permissions and money implications. I led a full product redesign without interrupting service."
     },
     "carshop": {
-      "title": "CarShop — Automotive Marketplace",
-      "description": "Marketplace of automotive workshops where users access workshops, request quotes, contract services, and keep a service history. Companies view quality metrics, completed services, and customer satisfaction."
+      "title": "CarShop — automotive marketplace",
+      "description": "A marketplace of auto repair shops where users request quotes, book services and keep a history, while businesses see quality and satisfaction metrics. I migrated the platform from Ruby on Rails to Next.js, rebuilding the frontend and the API layer without losing existing functionality."
     },
     "eddu": {
-      "title": "Eddu — Collections Management",
-      "description": "Collections management platform for educational systems with modules for reports, process automation, collections, and notifications. Built with Next.js, TypeScript, Node.js, and Google Cloud Functions."
+      "title": "Eddu — educational platform",
+      "description": "An educational platform built and operated end to end, from database design through the full frontend, across successive feature releases. Reporting modules, process automation, collections and notifications."
     },
     "ministeriosId": {
-      "title": "Ministerios Id — Ministry Website",
-      "description": "Institutional website for a Christian ministry featuring a video hero section, multi-page about section with doctrine, mission, and outreach, volunteer application, donation forms, and contact system with email notifications via Resend. Built with Next.js 15, HeroUI, and scroll-snap navigation."
+      "title": "Ministerios Id — institutional website",
+      "description": "Institutional site with a video hero section, pages on doctrine, mission and outreach, volunteering and donation forms, and a contact system with email notifications via Resend."
     },
     "portfolio": {
-      "title": "Personal Portfolio",
-      "description": "A modern, responsive portfolio website built with Next.js, TypeScript, and HeroUI. Features i18n, dark mode, smooth section transitions, and contact form with Resend."
+      "title": "Personal portfolio",
+      "description": "This site. Next.js with the App Router, layered architecture (domain, application, infrastructure, presentation), i18n, dark mode and a contact form powered by Resend."
     }
   },
   "experienceData": {
     "kompii": {
       "company": "Kompii",
-      "role": "Full Stack Developer",
-      "description": "Leading technology modernization and app maintenance in a monorepo with Turborepo and pnpm. Redesigned the admin app from Material UI to ShadCN UI, migrating from Page Router to App Router with tRPC. Developing the mobile app with Expo. Refactoring backend business logic for scalability. Integrating AI tools like Claude Code Agent to optimize workflow."
+      "role": "Full Stack Engineer",
+      "description": "I own features end to end on a production consignment marketplace for vehicles. I model the vehicle lifecycle across consignment agreement, listing, reservation, sale and seller payout — each stage with its own state, permissions and money implications. I led a full product redesign, rebuilding the interface without interrupting service for existing users, in a TypeScript monorepo with Turborepo, Next.js, tRPC and PostgreSQL."
+    },
+    "artitek": {
+      "company": "Artitek",
+      "role": "Founder & Full Stack Engineer",
+      "description": "I run an independent software consultancy: sole engineer designing, building and operating three production systems, including the direct technical relationship with the bank behind the payment integration. I took the first of them from architecture to a paying client in six months, sustained end to end with TDD and CI."
     },
     "gma": {
       "company": "GMA Desarrollo",
-      "role": "Full Stack Developer",
-      "description": "Developed CarShop, a marketplace of automotive workshops where users access workshops, request quotes, contract services, and keep a service history. Workshop companies view quality metrics, completed services, customer satisfaction, and work tracking."
+      "role": "Full Stack Engineer",
+      "description": "I owned an automotive marketplace end to end: data model, backend services and the user-facing product. I migrated the platform from Ruby on Rails to Next.js, rebuilding the frontend and the API layer without losing existing functionality."
     },
     "eddu": {
       "company": "Eddu",
-      "role": "Full Stack Developer",
-      "description": "Developed Eddu, a collections management platform for educational systems with modules for reports, process automation, collections, and notifications. Built with Next.js, TypeScript, Node.js, Google Cloud Functions, and PostgreSQL."
+      "role": "Full Stack Engineer",
+      "description": "I built and operated an educational platform end to end, from database design through the full frontend, across successive feature releases."
     }
   },
   "achievementData": {
-    "diaz-tech-consulting": {
-      "title": "Diaz Tech Consulting",
-      "description": "I started my own technology company in Caracas, Venezuela. Beyond writing code, I learned to define a business strategy, find clients, negotiate, and deliver complete products from start to finish. This experience gave me a perspective that goes far beyond development — understanding what a business needs to work."
+    "artitek": {
+      "title": "Founded Artitek",
+      "description": "I started my own software consultancy. Beyond writing code, I learned to define a strategy, find clients, negotiate with a bank and deliver a product from start to finish. I am the sole engineer behind three production systems, and I took the first from architecture to a paying client in six months."
+    },
+    "artitek-payments": {
+      "title": "A certifiable payment gateway in production",
+      "description": "I designed and operated a multi-tenant gateway integrated directly with Venezuelan banking, owning the technical relationship with the bank myself. 30 domains in a hexagonal architecture and 740 automated tests, with idempotency, a circuit breaker, signed webhooks, mTLS and card data redacted at the type level following OWASP ASVS L2."
     },
     "la-torre": {
       "title": "La Torre App",
-      "description": "I conceived and built an entire SaaS product from zero — from the idea to a functional platform ready for real users. La Torre App solves a real problem: condominium management. It handles finances, assemblies, payments, notifications, and access control for multiple organizations. I made every technical and creative decision, designing a system with 74 database tables and over 175 automated tests."
+      "description": "I conceived and built a complete SaaS product from scratch, from the idea to a paying client in six months. An assessment engine with pro-rating, dual currency, bank reconciliation and background workers, on a layered monorepo using a typed ok/error result instead of exceptions and 2,900 automated tests."
     }
   },
   "skillCategories": {
+    "languages": "Languages",
     "frontend": "Frontend",
     "backend": "Backend",
-    "database": "Databases",
-    "tools": "Tools"
+    "database": "Data",
+    "infrastructure": "Infrastructure",
+    "ai": "AI",
+    "practices": "Practices"
+  },
+  "skillData": {
+    "microservices": "Microservices",
+    "schemaDesign": "Schema design & migrations",
+    "llmIntegration": "LLM integration",
+    "modelEvaluation": "Model evaluation",
+    "agentAssisted": "Agent-assisted development",
+    "testing": "Unit & integration testing",
+    "hexagonal": "Hexagonal architecture",
+    "monorepos": "Monorepos",
+    "agile": "Agile"
   }
 }

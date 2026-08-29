@@ -3,10 +3,19 @@ import type { IAchievementRepository } from "@/domain/ports";
 
 const ACHIEVEMENTS: IAchievement[] = [
   {
-    id: "diaz-tech-consulting",
-    titleKey: "achievementData.diaz-tech-consulting.title",
-    descriptionKey: "achievementData.diaz-tech-consulting.description",
-    date: "2025",
+    id: "artitek",
+    titleKey: "achievementData.artitek.title",
+    descriptionKey: "achievementData.artitek.description",
+    date: "2026",
+    url: "https://artitek.dev",
+  },
+  {
+    id: "artitek-payments",
+    titleKey: "achievementData.artitek-payments.title",
+    descriptionKey: "achievementData.artitek-payments.description",
+    date: "2026",
+    technologies: ["Go", "Fiber", "PostgreSQL", "mTLS", "OWASP ASVS L2"],
+    url: "https://artitekpayments.com",
   },
   {
     id: "la-torre",
@@ -14,19 +23,16 @@ const ACHIEVEMENTS: IAchievement[] = [
     descriptionKey: "achievementData.la-torre.description",
     date: "2025",
     technologies: [
-      "Next.js",
-      "Hono",
       "TypeScript",
-      "PostgreSQL",
+      "Next.js 15",
+      "Hono",
       "Bun",
-      "Turborepo",
+      "PostgreSQL",
       "Drizzle ORM",
-      "Zustand",
-      "Firebase",
-      "Tailwind CSS",
+      "Turborepo",
+      "pg-boss",
     ],
-    repoUrl: "https://github.com/jadiazinf/condominio-platform",
-    url: "https://condominio-platform-web.vercel.app/",
+    url: "https://latorreapp.com",
   },
 ];
 

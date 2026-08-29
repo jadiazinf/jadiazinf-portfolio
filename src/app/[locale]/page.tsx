@@ -17,32 +17,48 @@ import {
 } from "@/infrastructure/repositories";
 
 export default async function HomePage() {
-  const [t, tProjects, tExperience, tAchievements, tSkillCategories] =
-    await Promise.all([
-      getTranslations(),
-      getTranslations("projectData"),
-      getTranslations("experienceData"),
-      getTranslations("achievementData"),
-      getTranslations("skillCategories"),
-    ]);
+  const [
+    t,
+    tProjects,
+    tExperience,
+    tAchievements,
+    tSkillCategories,
+    tSkillData,
+  ] = await Promise.all([
+    getTranslations(),
+    getTranslations("projectData"),
+    getTranslations("experienceData"),
+    getTranslations("achievementData"),
+    getTranslations("skillCategories"),
+    getTranslations("skillData"),
+  ]);
 
   const projects = getProjects(staticProjectRepository);
-  const skills = getSkills(staticSkillRepository);
   const experiences = getExperiences(staticExperienceRepository);
   const achievements = getAchievements(staticAchievementRepository);
   const socialLinks = getSocialLinks(staticSocialLinkRepository);
+
+  // Descriptive skills carry a `nameKey`; proper nouns render as they are.
+  const skills = getSkills(staticSkillRepository).map((skill) => ({
+    ...skill,
+    name: skill.nameKey ? tSkillData(skill.nameKey) : skill.name,
+  }));
 
   const projectTranslations: Record<
     string,
     { title: string; description: string }
   > = {
-    "diaz-tech-consulting": {
-      title: tProjects("diazTechConsulting.title"),
-      description: tProjects("diazTechConsulting.description"),
-    },
     "la-torre": {
       title: tProjects("laTorre.title"),
       description: tProjects("laTorre.description"),
+    },
+    "artitek-payments": {
+      title: tProjects("artitekPayments.title"),
+      description: tProjects("artitekPayments.description"),
+    },
+    "artitek-extraction": {
+      title: tProjects("artitekExtraction.title"),
+      description: tProjects("artitekExtraction.description"),
     },
     kompii: {
       title: tProjects("kompii.title"),
@@ -75,6 +91,11 @@ export default async function HomePage() {
       role: tExperience("kompii.role"),
       description: tExperience("kompii.description"),
     },
+    artitek: {
+      company: tExperience("artitek.company"),
+      role: tExperience("artitek.role"),
+      description: tExperience("artitek.description"),
+    },
     gma: {
       company: tExperience("gma.company"),
       role: tExperience("gma.role"),
@@ -91,9 +112,13 @@ export default async function HomePage() {
     string,
     { title: string; description: string }
   > = {
-    "diaz-tech-consulting": {
-      title: tAchievements("diaz-tech-consulting.title"),
-      description: tAchievements("diaz-tech-consulting.description"),
+    artitek: {
+      title: tAchievements("artitek.title"),
+      description: tAchievements("artitek.description"),
+    },
+    "artitek-payments": {
+      title: tAchievements("artitek-payments.title"),
+      description: tAchievements("artitek-payments.description"),
     },
     "la-torre": {
       title: tAchievements("la-torre.title"),
@@ -102,10 +127,13 @@ export default async function HomePage() {
   };
 
   const categoryLabels: Record<string, string> = {
+    languages: tSkillCategories("languages"),
     frontend: tSkillCategories("frontend"),
     backend: tSkillCategories("backend"),
     database: tSkillCategories("database"),
-    tools: tSkillCategories("tools"),
+    infrastructure: tSkillCategories("infrastructure"),
+    ai: tSkillCategories("ai"),
+    practices: tSkillCategories("practices"),
   };
 
   return (
@@ -117,6 +145,11 @@ export default async function HomePage() {
           role: t("hero.role"),
           tagline: t("hero.tagline"),
           cta: t("hero.cta"),
+          credentials: [
+            t("hero.credentials.citizenship"),
+            t("hero.credentials.english"),
+            t("hero.credentials.availability"),
+          ],
         },
         about: {
           title: t("about.title"),

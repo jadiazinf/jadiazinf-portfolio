@@ -3,29 +3,40 @@ import type { IProjectRepository } from "@/domain/ports";
 
 const PROJECTS: IProject[] = [
   {
-    id: "diaz-tech-consulting",
-    titleKey: "projectData.diazTechConsulting.title",
-    descriptionKey: "projectData.diazTechConsulting.description",
-    technologies: [],
-  },
-  {
     id: "la-torre",
     titleKey: "projectData.laTorre.title",
     descriptionKey: "projectData.laTorre.description",
     technologies: [
-      "Next.js",
-      "Hono",
       "TypeScript",
-      "PostgreSQL",
+      "Next.js 15",
+      "Hono",
       "Bun",
-      "Turborepo",
+      "PostgreSQL",
       "Drizzle ORM",
-      "Zustand",
-      "Firebase",
-      "Tailwind CSS",
+      "Turborepo",
+      "pg-boss",
     ],
-    sourceUrl: "https://github.com/jadiazinf/condominio-platform",
-    demoUrl: "https://condominio-platform-web.vercel.app/",
+    demoUrl: "https://latorreapp.com",
+  },
+  {
+    id: "artitek-payments",
+    titleKey: "projectData.artitekPayments.title",
+    descriptionKey: "projectData.artitekPayments.description",
+    technologies: [
+      "Go",
+      "Fiber",
+      "PostgreSQL",
+      "mTLS",
+      "Docker",
+      "SvelteKit",
+    ],
+    demoUrl: "https://artitekpayments.com",
+  },
+  {
+    id: "artitek-extraction",
+    titleKey: "projectData.artitekExtraction.title",
+    descriptionKey: "projectData.artitekExtraction.description",
+    technologies: ["Go", "PostgreSQL", "LLM", "Docker"],
   },
   {
     id: "kompii",
@@ -39,6 +50,7 @@ const PROJECTS: IProject[] = [
       "Expo",
       "Turborepo",
     ],
+    demoUrl: "https://kompii.com",
   },
   {
     id: "carshop",
@@ -57,6 +69,7 @@ const PROJECTS: IProject[] = [
       "Google Cloud Functions",
       "PostgreSQL",
     ],
+    demoUrl: "https://eddu.app",
   },
   {
     id: "ministerios-id",

@@ -7,6 +7,7 @@ type THeroSectionProps = {
   readonly role: string;
   readonly tagline: string;
   readonly ctaLabel: string;
+  readonly credentials: string[];
   readonly onNavigate: (sectionId: ESectionId) => void;
 };
 
@@ -16,6 +17,7 @@ export function HeroSection({
   role,
   tagline,
   ctaLabel,
+  credentials,
   onNavigate,
 }: THeroSectionProps) {
   return (
@@ -60,6 +62,18 @@ export function HeroSection({
         <Text variant="body" className="text-default-400 max-w-lg mt-2">
           {tagline}
         </Text>
+
+        <ul className="flex flex-wrap gap-x-3 gap-y-2 mt-3" aria-label={role}>
+          {credentials.map((credential) => (
+            <li
+              key={credential}
+              className="flex items-center gap-2 text-xs text-default-500 border border-default-200 rounded-full px-3 py-1"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+              {credential}
+            </li>
+          ))}
+        </ul>
 
         <button
           type="button"

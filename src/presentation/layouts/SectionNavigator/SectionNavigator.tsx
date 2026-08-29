@@ -30,6 +30,7 @@ type TSectionNavigatorProps = {
     role: string;
     tagline: string;
     ctaLabel: string;
+    credentials: string[];
   };
   readonly aboutProps: { title: string; paragraphs: string[] };
   readonly skillsProps: {

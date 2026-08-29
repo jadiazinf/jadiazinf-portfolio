@@ -10,12 +10,12 @@ const SOCIAL_LINKS: ISocialLink[] = [
   },
   {
     platform: ESocialPlatform.LinkedIn,
-    url: "https://www.linkedin.com/in/jesús-adolfo-díaz-centeno-66a447265",
+    url: "https://www.linkedin.com/in/jadiazinf",
     label: "LinkedIn",
   },
   {
     platform: ESocialPlatform.Email,
-    url: "mailto:jadiazinf@gmail.com",
+    url: "mailto:jadiaz.inf@gmail.com",
     label: "Email",
   },
 ];

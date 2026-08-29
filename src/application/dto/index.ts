@@ -19,6 +19,7 @@ export type TProjectDTO = {
 
 export type TSkillDTO = {
   readonly name: string;
+  readonly nameKey?: string;
   readonly category: ESkillCategory;
   readonly icon?: string;
 };

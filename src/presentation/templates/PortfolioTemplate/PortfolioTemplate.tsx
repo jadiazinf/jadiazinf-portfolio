@@ -18,6 +18,7 @@ type TPortfolioTranslations = {
     role: string;
     tagline: string;
     cta: string;
+    credentials: string[];
   };
   readonly about: { title: string; paragraphs: string[] };
   readonly skills: {
@@ -91,6 +92,7 @@ export function PortfolioTemplate({
         role: translations.hero.role,
         tagline: translations.hero.tagline,
         ctaLabel: translations.hero.cta,
+        credentials: translations.hero.credentials,
       }}
       aboutProps={{
         title: translations.about.title,
